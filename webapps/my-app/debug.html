@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Debug - ShopEasy</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Debug styles */
+        .debug-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            z-index: 9999;
+        }
+        
+        .test-element {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-info">
+        <div>CSS Test Page</div>
+        <div>Time: <span id="time"></span></div>
+        <div>CSS Loaded: <span id="css-status">Checking...</span></div>
+    </div>
+    
+    <div class="container">
+        <h1>CSS Debug Test</h1>
+        
+        <div class="test-element">
+            <h2>If you can see this styled, CSS is working!</h2>
+            <p>This should have a purple gradient background and white text.</p>
+        </div>
+        
+        <div class="btn">Test Button</div>
+        
+        <div class="message success">
+            <i class="fas fa-check"></i> Success message test
+        </div>
+        
+        <div class="message error">
+            <i class="fas fa-exclamation-triangle"></i> Error message test
+        </div>
+        
+        <div class="category-card">
+            <div class="category-icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Test Category</h3>
+            <p>This is a test category card</p>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x200/667eea/ffffff?text=Test+Product" alt="Test Product">
+            </div>
+            <div class="product-info">
+                <h3>Test Product</h3>
+                <p class="product-price">₹999</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(5.0)</span>
+                </div>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Update time
+        function updateTime() {
+            document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        // Check if CSS is loaded
+        function checkCSS() {
+            const testElement = document.querySelector('.test-element');
+            const computedStyle = window.getComputedStyle(testElement);
+            const background = computedStyle.background;
+            
+            if (background && background.includes('gradient')) {
+                document.getElementById('css-status').textContent = '✅ Loaded';
+                document.getElementById('css-status').style.color = 'green';
+            } else {
+                document.getElementById('css-status').textContent = '❌ Not Loaded';
+                document.getElementById('css-status').style.color = 'red';
+            }
+        }
+        
+        // Check CSS after page load
+        window.addEventListener('load', checkCSS);
+        setTimeout(checkCSS, 1000);
+    </script>
+</body>
+</html>

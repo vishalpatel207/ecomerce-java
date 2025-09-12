@@ -16,44 +16,61 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         
+        response.setContentType("text/html;charset=UTF-8");
+        
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        
+        // Basic validation
+        if (username == null || username.trim().isEmpty() ||
+            password == null || password.trim().isEmpty()) {
+            response.sendRedirect("login.jsp?error=Username and password are required");
+            return;
+        }
         
         if (isValidUser(username, password)) {
             HttpSession session = request.getSession();
             session.setAttribute("username", username);
-            session.setAttribute("loggedIn", true);
+            session.setAttribute("isLoggedIn", true);
+            session.setAttribute("fullName", getFullName(username));
             
-            response.sendRedirect("welcome.jsp");
+            // Redirect to home page with success message
+            response.sendRedirect("index.jsp?message=Welcome back, " + username + "!");
         } else {
-            response.setContentType("text/html");
-            PrintWriter out = response.getWriter();
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<meta charset='UTF-8'>");
-            out.println("<title>Login Error</title>");
-            out.println("<link rel='stylesheet' href='css/style.css'>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<div class='container'>");
-            out.println("<div class='message error'>");
-            out.println("Invalid username or password. Please try again.");
-            out.println("</div>");
-            out.println("<div class='header'>");
-            out.println("<h1>Login Failed</h1>");
-            out.println("<p>Please check your credentials and try again.</p>");
-            out.println("</div>");
-            out.println("<a href='login.jsp' class='btn'>Try Again</a>");
-            out.println("</div>");
-            out.println("</body>");
-            out.println("</html>");
+            response.sendRedirect("login.jsp?error=Invalid username or password. Please try again.");
         }
     }
     
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        // Redirect GET requests to login page
+        response.sendRedirect("login.jsp");
+    }
+    
     private boolean isValidUser(String username, String password) {
-        return "admin".equals(username) && "password123".equals(password) ||
-               "user".equals(username) && "user123".equals(password);
+        // In a real application, you would check against a database
+        // For demo purposes, we'll use some sample credentials
+        return ("admin".equals(username) && "password123".equals(password)) ||
+               ("user".equals(username) && "user123".equals(password)) ||
+               ("demo".equals(username) && "demo123".equals(password)) ||
+               ("test".equals(username) && "test123".equals(password));
+    }
+    
+    private String getFullName(String username) {
+        // In a real application, you would get this from a database
+        switch (username) {
+            case "admin":
+                return "Administrator";
+            case "user":
+                return "Regular User";
+            case "demo":
+                return "Demo User";
+            case "test":
+                return "Test User";
+            default:
+                return username;
+        }
     }
 }
 
