@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Critical CSS for immediate loading */
+       
         * {
             margin: 0;
             padding: 0;
@@ -677,7 +677,6 @@
     </div>
     <% } %>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -725,7 +724,6 @@
         </div>
     </nav>
     
-    <!-- Hero Slider Section -->
     <section class="hero-slider">
         <div class="slider-container">
             <div class="slide active">
@@ -768,7 +766,6 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
     <section class="categories" id="categories">
         <div class="container">
             <h2 class="section-title">Shop by Category</h2>
@@ -808,7 +805,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section class="products" id="products">
         <div class="container">
             <h2 class="section-title">Featured Products</h2>
@@ -948,7 +944,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
@@ -1003,7 +998,7 @@
     </footer>
     
     <script>
-        // Slider functionality
+     
         let currentSlideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const dots = document.querySelectorAll('.dot');
@@ -1034,12 +1029,10 @@
             showSlide(currentSlideIndex);
         }
 
-        // Auto-slide functionality
         setInterval(() => {
             changeSlide(1);
         }, 5000);
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1053,7 +1046,6 @@
             });
         });
 
-        // Add to cart functionality
         document.querySelectorAll('.product-card .btn-primary').forEach(button => {
             button.addEventListener('click', function() {
                 const productName = this.closest('.product-card').querySelector('h3').textContent;
@@ -1061,7 +1053,6 @@
             });
         });
 
-        // Search functionality
         document.querySelector('.search-btn').addEventListener('click', function() {
             const searchTerm = document.querySelector('.search-input').value;
             if (searchTerm.trim()) {
@@ -1069,20 +1060,17 @@
             }
         });
 
-        // Enter key for search
         document.querySelector('.search-input').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 document.querySelector('.search-btn').click();
             }
         });
 
-        // Mobile menu functionality
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('active');
         }
 
-        // Close mobile menu when clicking outside
         document.addEventListener('click', function(e) {
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -1092,7 +1080,6 @@
             }
         });
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
             link.addEventListener('click', function() {
                 document.getElementById('mobileMenu').classList.remove('active');

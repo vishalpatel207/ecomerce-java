@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Debug styles */
         .debug-info {
             position: fixed;
             top: 10px;
@@ -85,14 +84,12 @@
     </div>
     
     <script>
-        // Update time
         function updateTime() {
             document.getElementById('time').textContent = new Date().toLocaleTimeString();
         }
         updateTime();
         setInterval(updateTime, 1000);
         
-        // Check if CSS is loaded
         function checkCSS() {
             const testElement = document.querySelector('.test-element');
             const computedStyle = window.getComputedStyle(testElement);
@@ -107,7 +104,6 @@
             }
         }
         
-        // Check CSS after page load
         window.addEventListener('load', checkCSS);
         setTimeout(checkCSS, 1000);
     </script>
