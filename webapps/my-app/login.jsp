@@ -7,9 +7,7 @@
     <title>Login - ShopEasy</title>
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Critical CSS for login page */
-        * {
+    <style>        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -210,12 +208,7 @@
             </button>
         </form>
         
-        <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; font-size: 14px;">
-            <strong>Demo Credentials:</strong><br>
-            Username: <code>admin</code> | Password: <code>password123</code><br>
-            Username: <code>user</code> | Password: <code>user123</code><br>
-            Username: <code>demo</code> | Password: <code>demo123</code>
-        </div>
+        
         
         <div class="link">
             <a href="index.jsp"><i class="fas fa-home"></i> Back to Home</a>

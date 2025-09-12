@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation Bar */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -79,7 +77,7 @@ body {
     background: #667eea;
     border: none;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 9px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -136,7 +134,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Hero Slider */
 .hero-slider {
     position: relative;
     height: 100vh;
@@ -198,12 +195,12 @@ body {
 
 .slider-nav {
     position: absolute;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 10px;
     z-index: 3;
 }
 
@@ -221,8 +218,8 @@ body {
 }
 
 .slider-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    background: #667eea;
+    transform: scale(1.1);      
 }
 
 .slider-dots {
@@ -249,7 +246,6 @@ body {
     transform: scale(1.2);
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -280,7 +276,6 @@ body {
     font-size: 12px;
 }
 
-/* Sections */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -302,7 +297,6 @@ body {
     border-radius: 2px;
 }
 
-/* Categories Section */
 .categories {
     padding: 100px 0;
     background: white;
@@ -354,7 +348,6 @@ body {
     font-size: 1rem;
 }
 
-/* Products Section */
 .products {
     padding: 100px 0;
     background: #f8f9fa;
@@ -450,7 +443,6 @@ body {
     margin-left: 5px;
 }
 
-/* Footer */
 .footer {
     background: #2d3748;
     color: white;
@@ -552,7 +544,6 @@ body {
     color: #a0aec0;
 }
 
-/* Login/Signup Form Styles */
 body.login-page,
 body.signup-page {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -635,7 +626,6 @@ body.signup-page {
     text-decoration: underline;
 }
 
-/* Message Styles */
 .message {
     padding: 12px 16px;
     border-radius: 8px;
@@ -658,7 +648,6 @@ body.signup-page {
     border: 1px solid #feb2b2;
 }
 
-/* Success Message */
 .success-message {
     position: fixed;
     top: 80px;
@@ -693,7 +682,6 @@ body.signup-page {
     opacity: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
         flex-wrap: wrap;
@@ -785,7 +773,6 @@ body.signup-page {
     }
 }
 
-/* Animation styles */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -812,13 +799,11 @@ body.signup-page {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Additional fixes for better UI */
 .nav-brand:hover {
     color: #5a67d8;
 }
 
 .product-card .btn {
-    width: 100%;
     text-align: center;
 }
 
@@ -826,7 +811,6 @@ body.signup-page {
     transform: scale(1.1);
 }
 
-/* Fix for mobile navigation */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -837,12 +821,10 @@ body.signup-page {
     }
 }
 
-/* Ensure proper spacing */
 .hero-slider {
     min-height: calc(100vh - 70px);
 }
 
-/* Fix for form validation messages */
 .form-group input:invalid {
     border-color: #e53e3e;
 }
@@ -851,7 +833,6 @@ body.signup-page {
     border-color: #48bb78;
 }
 
-/* Loading states */
 .btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
