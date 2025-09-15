@@ -443,8 +443,8 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
                 <a href="category.jsp" class="nav-link">Categories</a>
                 <a href="product.jsp?category=<%=category%>" class="nav-link active">Products</a>
                 <a href="cart.jsp" class="nav-link">Cart</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="about.jsp" class="nav-link">About</a>
+                <a href="contact.jsp" class="nav-link">Contact</a>
             </div>
             <div class="nav-actions d-none d-lg-flex">
                 <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
@@ -480,8 +480,8 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
                 <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
                 <a href="product.jsp?category=<%=category%>" class="nav-link active" data-bs-dismiss="offcanvas">Products</a>
                 <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
-                <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-                <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
+                <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
+                <a href="contact.jsp" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
             </nav>
             <div class="mt-auto d-flex align-items-center gap-3">
                 <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>

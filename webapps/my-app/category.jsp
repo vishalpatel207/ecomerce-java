@@ -55,212 +55,6 @@ categories.put("Beauty", beauty);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css?v=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .navbar {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-        .nav-brand {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #667eea;
-            text-decoration: none;
-        }
-        .nav-brand i {
-            font-size: 2rem;
-        }
-        .category-card {
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        .category-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        .category-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        .category-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .category-card:hover .category-overlay {
-            opacity: 1;
-        }
-        .category-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 2px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-            .container {
-                max-width: 100%;
-                padding: 0 15px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .categories-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 20px;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 40px;
-            }
-            
-            .categories-grid {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                gap: 15px;
-            }
-            
-            .category-card {
-                padding: 30px 15px;
-            }
-            
-            .category-icon {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
-            }
-            
-            .category-image {
-                height: 150px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .container {
-                padding: 0 10px;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 30px;
-            }
-            
-            .categories-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .category-card {
-                padding: 25px 15px;
-            }
-            
-            .category-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
-            }
-            
-            .category-image {
-                height: 120px;
-            }
-            
-            .nav-brand {
-                font-size: 1.5rem;
-            }
-            
-            .nav-brand i {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .section-title {
-                font-size: 1.4rem;
-            }
-            
-            .category-card h5 {
-                font-size: 1.1rem;
-            }
-            
-            .category-card p {
-                font-size: 0.9rem;
-            }
-            
-            .btn {
-                padding: 8px 16px;
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .container {
-                padding: 0 5px;
-            }
-            
-            .category-card {
-                padding: 20px 10px;
-            }
-            
-            .category-icon {
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-            }
-            
-            .category-image {
-                height: 100px;
-            }
-        }
-    </style>
 </head>
 <body>
     <% String message=request.getParameter("message"); String username=(String) session.getAttribute("username"); Boolean isLoggedIn=(Boolean) session.getAttribute("isLoggedIn"); if (isLoggedIn==null) isLoggedIn=false; %>
@@ -472,7 +266,7 @@ categories.put("Beauty", beauty);
             .category-image {
                 height: 100px;
             }
-        }
+        } 
     </style>
     <nav class="navbar">
         <div class="nav-container">
@@ -489,8 +283,8 @@ categories.put("Beauty", beauty);
                 <a href="category.jsp" class="nav-link active">Categories</a>
                 <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
                 <a href="cart.jsp" class="nav-link">Cart</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="about.jsp" class="nav-link">About</a>
+                <a href="contact.jsp" class="nav-link">Contact</a>
             </div>
             <div class="nav-actions d-none d-lg-flex">
                 <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
@@ -526,8 +320,8 @@ categories.put("Beauty", beauty);
                 <a href="category.jsp" class="nav-link active" data-bs-dismiss="offcanvas">Categories</a>
                 <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
                 <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
-                <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-                <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
+                <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
+                <a href="contact.jsp" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
             </nav>
             <div class="mt-auto d-flex align-items-center gap-3">
                 <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>

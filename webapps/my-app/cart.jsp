@@ -274,9 +274,9 @@ for (Map<String, String> item : cart) {
         }
         .product-image {
             width: 100px;
-            height: 100px;
             object-fit: cover;
             border-radius: 10px;
+            max-height: 100%;
         }
         .quantity-controls {
             display: flex;
@@ -395,7 +395,7 @@ for (Map<String, String> item : cart) {
             
             .product-image {
                 width: 150px;
-                height: 150px;
+                /* height removed for auto aspect ratio */
                 margin: 0 auto;
             }
             
@@ -416,7 +416,7 @@ for (Map<String, String> item : cart) {
             
             .product-image {
                 width: 120px;
-                height: 120px;
+                /* height removed for auto aspect ratio */
             }
             
             .total-section {
@@ -449,7 +449,7 @@ for (Map<String, String> item : cart) {
             
             .product-image {
                 width: 100px;
-                height: 100px;
+                /* height removed for auto aspect ratio */
             }
             
             .cart-item h5 {
@@ -496,7 +496,7 @@ for (Map<String, String> item : cart) {
             
             .product-image {
                 width: 80px;
-                height: 80px;
+                /* height removed for auto aspect ratio */
             }
             
             .cart-item h5 {
@@ -539,7 +539,7 @@ for (Map<String, String> item : cart) {
             
             .product-image {
                 width: 70px;
-                height: 70px;
+                /* height removed for auto aspect ratio */
             }
             
             .btn {
@@ -726,8 +726,8 @@ for (Map<String, String> item : cart) {
             <a href="category.jsp" class="nav-link">Categories</a>
             <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
             <a href="cart.jsp" class="nav-link active">Cart</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="about.jsp" class="nav-link">About</a>
+            <a href="contact.jsp" class="nav-link">Contact</a>
         </div>
         <div class="nav-actions d-none d-lg-flex">
             <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
@@ -763,8 +763,8 @@ for (Map<String, String> item : cart) {
             <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
             <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
             <a href="cart.jsp" class="nav-link active" data-bs-dismiss="offcanvas">Cart</a>
-            <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-            <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
+            <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
+            <a href="contact.jsp" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
         </nav>
         <div class="mt-auto d-flex align-items-center gap-3">
             <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>
