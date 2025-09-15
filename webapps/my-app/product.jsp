@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%
+String message=request.getParameter("message");
+String username=(String) session.getAttribute("username");
+Boolean isLoggedIn=(Boolean) session.getAttribute("isLoggedIn");
+if (isLoggedIn==null) isLoggedIn=false;
+
 String category = request.getParameter("category");
 if (category == null) category = "Electronics";
 
@@ -171,6 +176,7 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -202,7 +208,6 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         .product-image {
-            height: 250px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -289,6 +294,10 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
             border-radius: 25px;
             padding: 10px 25px;
             font-weight: 600;
+        }
+
+        .custom-top{
+            margin-top: 110px;
         }
 
         /* Responsive Design */
@@ -419,32 +428,75 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.jsp">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
                 <i class="fas fa-shopping-bag"></i>
                 <span>ShopEasy</span>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.jsp">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category.jsp">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="product.jsp?category=<%=category%>">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.jsp">Cart</a>
-                    </li>
-                </ul>
             </div>
+            <div class="nav-search d-none d-lg-flex">
+                <input type="text" placeholder="Search products..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="index.jsp" class="nav-link">Home</a>
+                <a href="category.jsp" class="nav-link">Categories</a>
+                <a href="product.jsp?category=<%=category%>" class="nav-link active">Products</a>
+                <a href="cart.jsp" class="nav-link">Cart</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions d-none d-lg-flex">
+                <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
+                <a href="#" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                <% if (isLoggedIn) { %>
+                    <div class="user-info">
+                        <span class="welcome-text">Welcome, <%= username %>!</span>
+                        <a href="logout.jsp" class="nav-icon" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                <% } else { %>
+                    <a href="login.jsp" class="nav-icon" title="Login"><i class="fas fa-user"></i></a>
+                <% } %>
+            </div>
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Open menu" style="margin-left: 38px;">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navOffcanvasLabel">ShopEasy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div class="mb-3">
+                <div class="d-flex align-items-center p-2 rounded" style="background:#f8f9fa;">
+                    <input type="text" class="form-control form-control-sm me-2" placeholder="Search products..." id="offcanvasSearchInput">
+                    <button class="btn btn-primary btn-sm" id="offcanvasSearchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <nav class="nav flex-column mb-3">
+                <a href="index.jsp" class="nav-link">Home</a>
+                <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
+                <a href="product.jsp?category=<%=category%>" class="nav-link active" data-bs-dismiss="offcanvas">Products</a>
+                <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
+                <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">About</a>
+                <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
+            </nav>
+            <div class="mt-auto d-flex align-items-center gap-3">
+                <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>
+                <a href="#" class="text-secondary"><i class="fas fa-shopping-cart"></i></a>
+                <% if (isLoggedIn) { %>
+                    <span class="text-primary fw-semibold">Welcome, <%= username %></span>
+                    <a href="logout.jsp" class="btn btn-outline-primary btn-sm" data-bs-dismiss="offcanvas">Logout</a>
+                <% } else { %>
+                    <a href="login.jsp" class="btn btn-outline-primary btn-sm" data-bs-dismiss="offcanvas">Login</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
     
-    <div class="container mt-5">
+    <div class="container custom-top">
         <h1 class="section-title"><%=category%> Products</h1>
         <% if(prodList.isEmpty()) { %>
             <div class="alert alert-info text-center">

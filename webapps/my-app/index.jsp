@@ -244,8 +244,9 @@
                 font-weight: 700;
                 color: #2d3748;
                 margin-bottom: 50px;
-                position: relative;
-            }
+                position:relative;
+
+                }
 
             .section-title::after {
                 content: '';
@@ -262,7 +263,7 @@
             .categories {
                 padding: 100px 0;
                 background: white;
-            }
+            }   
 
             .categories-grid {
                 display: grid;
@@ -291,9 +292,9 @@
                 margin: 0 auto 20px;
                 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                 border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+               display: flex;
+               align-items: center;
+               justify-content: center;
                 color: white;
                 font-size: 2rem;
             }
@@ -337,7 +338,6 @@
             .product-image {
                 position: relative;
                 overflow: hidden;
-                height: 250px;
             }
 
             .product-image img {
@@ -627,10 +627,7 @@
                     gap: 30px;
                 }
 
-                .social-links {
-                    justify-content: center;
-                }
-
+            
                 .success-message {
                     top: 100px;
                     left: 20px;
@@ -911,8 +908,7 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas"
                         aria-labelledby="navOffcanvasLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="navOffcanvasLabel"><i
-                                    class="fas fa-shopping-bag me-2"></i>ShopEasy</h5>
+                            <h5 class="offcanvas-title" id="navOffcanvasLabel">ShopEasy</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>

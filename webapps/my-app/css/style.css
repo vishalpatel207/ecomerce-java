@@ -375,7 +375,6 @@ body {
 .product-image {
     position: relative;
     overflow: hidden;
-    height: 250px;
 }
 
 .product-image img {
@@ -728,9 +727,7 @@ body.signup-page {
         text-align: center;
     }
     
-    .social-links {
-        justify-content: center;
-    }
+   
     
     .success-message {
         top: 100px;
