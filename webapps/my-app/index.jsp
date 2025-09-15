@@ -237,6 +237,8 @@
             }
 
             .section-title {
+                                margin-top: 50px;
+
                 text-align: center;
                 font-size: 2.5rem;
                 font-weight: 700;
@@ -404,6 +406,7 @@
             }
 
             .footer {
+                margin-top: 20px;
                 background: #2d3748;
                 color: white;
                 padding: 60px 0 20px;

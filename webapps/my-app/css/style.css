@@ -444,6 +444,8 @@ body {
 }
 
 .footer {
+                    margin-top: 20px;
+
     background: #2d3748;
     color: white;
     padding: 60px 0 20px;
