@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page import="java.util.*" %>
     <!DOCTYPE html>
     <html>
 
@@ -555,7 +556,21 @@
                 }
             }
 
-            @media (max-width: 768px) {
+            /* Mobile First Responsive Design */
+            @media (max-width: 1200px) {
+                .container {
+                    max-width: 100%;
+                    padding: 0 15px;
+                }
+                
+                .categories-grid,
+                .products-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 20px;
+                }
+            }
+
+            @media (max-width: 992px) {
                 .nav-links {
                     display: none !important;
                 }
@@ -587,25 +602,26 @@
                 }
 
                 .slide-content h1 {
-                    font-size: 2.5rem;
+                    font-size: 2.8rem;
                 }
 
                 .slide-content p {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                 }
 
                 .section-title {
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                 }
 
                 .categories-grid,
                 .products-grid {
-                    grid-template-columns: 1fr;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 20px;
                 }
 
                 .footer-content {
-                    grid-template-columns: 1fr;
-                    text-align: center;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px;
                 }
 
                 .social-links {
@@ -621,25 +637,212 @@
                 }
             }
 
-            @media (max-width: 480px) {
-                .container {
-                    padding: 0 15px;
-                }
-
+            @media (max-width: 768px) {
                 .nav-container {
                     padding: 10px 15px;
                 }
 
                 .slide-content h1 {
-                    font-size: 2rem;
+                    font-size: 2.2rem;
+                }
+
+                .slide-content p {
+                    font-size: 1.1rem;
+                }
+
+                .section-title {
+                    font-size: 1.8rem;
+                }
+
+                .categories-grid,
+                .products-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 15px;
+                }
+
+                .category-card,
+                .product-card {
+                    padding: 20px 15px;
+                }
+
+                .category-icon {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 1.5rem;
+                }
+
+                .product-image {
+                    height: 200px;
+                }
+
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    gap: 25px;
+                }
+
+                .success-message {
+                    top: 90px;
+                    left: 15px;
+                    right: 15px;
+                    padding: 12px 20px;
+                    font-size: 14px;
+                }
+
+                .hero-slider {
+                    height: 70vh;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .container {
+                    padding: 0 10px;
+                }
+
+                .nav-container {
+                    padding: 8px 10px;
+                }
+
+                .nav-brand {
+                    font-size: 1.5rem;
+                }
+
+                .nav-brand i {
+                    font-size: 1.5rem;
+                }
+
+                .slide-content h1 {
+                    font-size: 1.8rem;
+                    margin-bottom: 15px;
+                }
+
+                .slide-content p {
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                }
+
+                .section-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 30px;
+                }
+
+                .categories-grid,
+                .products-grid {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+
+                .category-card,
+                .product-card {
+                    padding: 15px 10px;
+                }
+
+                .category-icon {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 1.2rem;
+                }
+
+                .product-image {
+                    height: 180px;
+                }
+
+                .product-info h3 {
+                    font-size: 1.1rem;
+                }
+
+                .product-price {
+                    font-size: 1.3rem;
+                }
+
+                .btn {
+                    padding: 10px 20px;
+                    font-size: 13px;
+                }
+
+                .hero-slider {
+                    height: 60vh;
                 }
 
                 .success-message {
                     top: 80px;
                     left: 10px;
                     right: 10px;
-                    padding: 12px 20px;
-                    font-size: 14px;
+                    padding: 10px 15px;
+                    font-size: 13px;
+                }
+
+                .footer {
+                    padding: 40px 0 15px;
+                }
+
+                .footer-content {
+                    gap: 20px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .slide-content h1 {
+                    font-size: 1.5rem;
+                }
+
+                .slide-content p {
+                    font-size: 0.9rem;
+                }
+
+                .section-title {
+                    font-size: 1.4rem;
+                }
+
+                .category-card h3,
+                .product-info h3 {
+                    font-size: 1rem;
+                }
+
+                .product-price {
+                    font-size: 1.2rem;
+                }
+
+                .btn {
+                    padding: 8px 16px;
+                    font-size: 12px;
+                }
+
+                .hero-slider {
+                    height: 50vh;
+                }
+            }
+
+            /* Extra small devices */
+            @media (max-width: 360px) {
+                .container {
+                    padding: 0 5px;
+                }
+
+                .nav-container {
+                    padding: 5px 8px;
+                }
+
+                .slide-content h1 {
+                    font-size: 1.3rem;
+                }
+
+                .slide-content p {
+                    font-size: 0.8rem;
+                }
+
+                .section-title {
+                    font-size: 1.2rem;
+                }
+
+                .category-card,
+                .product-card {
+                    padding: 12px 8px;
+                }
+
+                .btn {
+                    padding: 6px 12px;
+                    font-size: 11px;
                 }
             }
         </style>
@@ -671,8 +874,9 @@
 
                             <div class="nav-links">
                                 <a href="index.jsp" class="nav-link active">Home</a>
-                                <a href="#products" class="nav-link">Products</a>
-                                <a href="#categories" class="nav-link">Categories</a>
+                                <a href="category.jsp" class="nav-link">Categories</a>
+                                <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
+                                <a href="cart.jsp" class="nav-link">Cart</a>
                                 <a href="#about" class="nav-link">About</a>
                                 <a href="#contact" class="nav-link">Contact</a>
                             </div>
@@ -720,8 +924,9 @@
                             </div>
                             <nav class="nav flex-column mb-3">
                                 <a href="index.jsp" class="nav-link">Home</a>
-                                <a href="#products" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
-                                <a href="#categories" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
+                                <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
+                                <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
+                                <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
                                 <a href="#about" class="nav-link" data-bs-dismiss="offcanvas">About</a>
                                 <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
                             </nav>
@@ -835,37 +1040,63 @@
                             <div class="container">
                                 <h2 class="section-title">Shop by Category</h2>
                                 <div class="categories-grid">
-                                    <div class="category-card">
-                                        <div class="category-icon">
-                                            <i class="fas fa-laptop"></i>
-                                        </div>
-                                        <h3>Electronics</h3>
-                                        <p>Latest gadgets and devices</p>
-                                    </div>
+                                    <%
+                                    // Dynamic categories with images and descriptions
+                                    Map<String, Map<String, String>> categories = new HashMap<>();
+                                    Map<String, String> electronics = new HashMap<>();
+                                    electronics.put("name", "Electronics");
+                                    electronics.put("description", "Latest gadgets and devices");
+                                    electronics.put("image", "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop&crop=center");
+                                    electronics.put("icon", "fas fa-laptop");
 
-                                    <div class="category-card">
-                                        <div class="category-icon">
-                                            <i class="fas fa-tshirt"></i>
-                                        </div>
-                                        <h3>Fashion</h3>
-                                        <p>Trendy clothes and accessories</p>
-                                    </div>
+                                    Map<String, String> fashion = new HashMap<>();
+                                    fashion.put("name", "Fashion");
+                                    fashion.put("description", "Trendy clothes and accessories");
+                                    fashion.put("image", "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop&crop=center");
+                                    fashion.put("icon", "fas fa-tshirt");
 
-                                    <div class="category-card">
-                                        <div class="category-icon">
-                                            <i class="fas fa-home"></i>
-                                        </div>
-                                        <h3>Home & Garden</h3>
-                                        <p>Everything for your home</p>
-                                    </div>
+                                    Map<String, String> home = new HashMap<>();
+                                    home.put("name", "Home & Garden");
+                                    home.put("description", "Everything for your home");
+                                    home.put("image", "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center");
+                                    home.put("icon", "fas fa-home");
 
-                                    <div class="category-card">
-                                        <div class="category-icon">
-                                            <i class="fas fa-gamepad"></i>
+                                    Map<String, String> sports = new HashMap<>();
+                                    sports.put("name", "Sports");
+                                    sports.put("description", "Sports equipment and gear");
+                                    sports.put("image", "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center");
+                                    sports.put("icon", "fas fa-gamepad");
+
+                                    Map<String, String> books = new HashMap<>();
+                                    books.put("name", "Books");
+                                    books.put("description", "Educational and entertainment books");
+                                    books.put("image", "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=center");
+                                    books.put("icon", "fas fa-book");
+
+                                    Map<String, String> beauty = new HashMap<>();
+                                    beauty.put("name", "Beauty");
+                                    beauty.put("description", "Cosmetics and personal care");
+                                    beauty.put("image", "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop&crop=center");
+                                    beauty.put("icon", "fas fa-palette");
+
+                                    categories.put("Electronics", electronics);
+                                    categories.put("Fashion", fashion);
+                                    categories.put("Home", home);
+                                    categories.put("Sports", sports);
+                                    categories.put("Books", books);
+                                    categories.put("Beauty", beauty);
+
+                                    for(Map.Entry<String, Map<String, String>> entry : categories.entrySet()) { 
+                                        Map<String, String> category = entry.getValue();
+                                    %>
+                                        <div class="category-card" onclick="window.location.href='product.jsp?category=<%=entry.getKey()%>'">
+                                            <div class="category-icon">
+                                                <i class="<%=category.get("icon")%>"></i>
+                                            </div>
+                                            <h3><%=category.get("name")%></h3>
+                                            <p><%=category.get("description")%></p>
                                         </div>
-                                        <h3>Sports</h3>
-                                        <p>Sports equipment and gear</p>
-                                    </div>
+                                    <% } %>
                                 </div>
                             </div>
                         </section>
@@ -874,179 +1105,106 @@
                             <div class="container">
                                 <h2 class="section-title">Featured Products</h2>
                                 <div class="products-grid">
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop&crop=center"
-                                                alt="Smartphone Pro" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="Smartphone Pro"
-                                                    data-img="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹25,999" data-rating="4.5"
-                                                    data-desc="Latest Smartphone Pro with advanced features.">
-                                                    Quick View
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3>Smartphone Pro</h3>
-                                            <p class="product-price">₹25,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span>(4.5)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    <%
+                                    // Dynamic featured products
+                                    List<Map<String, String>> featuredProducts = new ArrayList<>();
+                                    
+                                    Map<String, String> phone = new HashMap<>();
+                                    phone.put("name", "Smartphone Pro");
+                                    phone.put("price", "₹25,999");
+                                    phone.put("image", "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop&crop=center");
+                                    phone.put("description", "Latest Smartphone Pro with advanced features and 5G connectivity");
+                                    phone.put("rating", "4.5");
+                                    phone.put("id", "phone1");
+                                    featuredProducts.add(phone);
 
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center"
-                                                alt="Gaming Laptop" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="Gaming Laptop"
-                                                    data-img="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹65,999" data-rating="4.2"
-                                                    data-desc="High performance gaming laptop for pro gamers.">
-                                                    Quick View
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3>Gaming Laptop</h3>
-                                            <p class="product-price">₹65,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <span>(4.2)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    Map<String, String> laptop = new HashMap<>();
+                                    laptop.put("name", "Gaming Laptop");
+                                    laptop.put("price", "₹65,999");
+                                    laptop.put("image", "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center");
+                                    laptop.put("description", "High performance gaming laptop for pro gamers");
+                                    laptop.put("rating", "4.2");
+                                    laptop.put("id", "laptop1");
+                                    featuredProducts.add(laptop);
 
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center"
-                                                alt="Wireless Headphones" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="Wireless Headphones"
-                                                    data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹8,999" data-rating="4.8"
-                                                    data-desc="Noise-cancelling wireless headphones.">
-                                                    Quick View
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3>Wireless Headphones</h3>
-                                            <p class="product-price">₹8,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span>(4.8)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    Map<String, String> headphones = new HashMap<>();
+                                    headphones.put("name", "Wireless Headphones");
+                                    headphones.put("price", "₹8,999");
+                                    headphones.put("image", "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center");
+                                    headphones.put("description", "Noise-cancelling wireless headphones with premium sound");
+                                    headphones.put("rating", "4.8");
+                                    headphones.put("id", "headphones1");
+                                    featuredProducts.add(headphones);
 
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop&crop=center"
-                                                alt="Smart Watch" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="Smart Watch"
-                                                    data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹12,999" data-rating="4.3"
-                                                    data-desc="Smart Watch with fitness tracking features.">
-                                                    Quick View
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3>Smart Watch</h3>
-                                            <p class="product-price">₹12,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <span>(4.3)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    Map<String, String> smartwatch = new HashMap<>();
+                                    smartwatch.put("name", "Smart Watch");
+                                    smartwatch.put("price", "₹12,999");
+                                    smartwatch.put("image", "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop&crop=center");
+                                    smartwatch.put("description", "Smart Watch with fitness tracking and health monitoring");
+                                    smartwatch.put("rating", "4.3");
+                                    smartwatch.put("id", "smartwatch1");
+                                    featuredProducts.add(smartwatch);
 
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop&crop=center"
-                                                alt="Tablet Pro" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="Tablet Pro"
-                                                    data-img="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹18,999" data-rating="4.6"
-                                                    data-desc="Tablet Pro with high-res display and long battery.">
-                                                    Quick View
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <h3>Tablet Pro</h3>
-                                            <p class="product-price">₹18,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span>(4.6)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    Map<String, String> tablet = new HashMap<>();
+                                    tablet.put("name", "Tablet Pro");
+                                    tablet.put("price", "₹18,999");
+                                    tablet.put("image", "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop&crop=center");
+                                    tablet.put("description", "Tablet Pro with high-res display and long battery life");
+                                    tablet.put("rating", "4.6");
+                                    tablet.put("id", "tablet1");
+                                    featuredProducts.add(tablet);
 
-                                    <div class="product-card">
-                                        <div class="product-image">
-                                            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop&crop=center"
-                                                alt="DSLR Camera" loading="lazy">
-                                            <div class="product-overlay">
-                                                <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                    data-bs-target="#quickViewModal" data-title="DSLR Camera"
-                                                    data-img="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&h=800&fit=crop&crop=center"
-                                                    data-price="₹45,999" data-rating="4.4"
-                                                    data-desc="Professional DSLR Camera for photography lovers.">
-                                                    Quick View
-                                                </button>
+                                    Map<String, String> camera = new HashMap<>();
+                                    camera.put("name", "DSLR Camera");
+                                    camera.put("price", "₹45,999");
+                                    camera.put("image", "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop&crop=center");
+                                    camera.put("description", "Professional DSLR Camera for photography lovers");
+                                    camera.put("rating", "4.4");
+                                    camera.put("id", "camera1");
+                                    featuredProducts.add(camera);
+
+                                    for(Map<String, String> product : featuredProducts) { 
+                                    %>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="<%=product.get("image")%>" alt="<%=product.get("name")%>" loading="lazy">
+                                                <div class="product-overlay">
+                                                    <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
+                                                        data-bs-target="#quickViewModal" data-title="<%=product.get("name")%>"
+                                                        data-img="<%=product.get("image")%>"
+                                                        data-price="<%=product.get("price")%>" data-rating="<%=product.get("rating")%>"
+                                                        data-desc="<%=product.get("description")%>">
+                                                        Quick View
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3><%=product.get("name")%></h3>
+                                                <p class="product-price"><%=product.get("price")%></p>
+                                                <div class="product-rating">
+                                                    <% 
+                                                    double rating = Double.parseDouble(product.get("rating"));
+                                                    for(int i = 1; i <= 5; i++) {
+                                                        if(i <= rating) {
+                                                    %>
+                                                        <i class="fas fa-star"></i>
+                                                    <% } else if(i - 0.5 <= rating) { %>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    <% } else { %>
+                                                        <i class="far fa-star"></i>
+                                                    <% } } %>
+                                                    <span>(<%=product.get("rating")%>)</span>
+                                                </div>
+                                                <form action="cart.jsp" method="post">
+                                                    <input type="hidden" name="productId" value="<%=product.get("id")%>" />
+                                                    <input type="hidden" name="productName" value="<%=product.get("name")%>" />
+                                                    <input type="hidden" name="productPrice" value="<%=product.get("price")%>" />
+                                                    <input type="hidden" name="productImage" value="<%=product.get("image")%>" />
+                                                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="product-info">
-                                            <h3>DSLR Camera</h3>
-                                            <p class="product-price">₹45,999</p>
-                                            <div class="product-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <span>(4.4)</span>
-                                            </div>
-                                            <button class="btn btn-primary">Add to Cart</button>
-                                        </div>
-                                    </div>
+                                    <% } %>
                                 </div>
                             </div>
                         </section>

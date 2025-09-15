@@ -1941,3 +1941,201 @@
 12-Sep-2025 16:30:01.140 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 12-Sep-2025 16:30:01.204 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 12-Sep-2025 16:30:01.209 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:32:17.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+15-Sep-2025 10:32:17.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+15-Sep-2025 10:32:17.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+15-Sep-2025 10:32:17.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Sep-2025 10:32:17.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-79-generic
+15-Sep-2025 10:32:17.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Sep-2025 10:32:17.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/dell/Aigital/sapmachine-jdk-17.0.11_linux-x64_bin/sapmachine-jdk-17.0.11
+15-Sep-2025 10:32:17.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.11+9-LTS
+15-Sep-2025 10:32:17.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            SAP SE
+15-Sep-2025 10:32:17.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:32:17.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:32:18.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/dell/Desktop/apache-tomcat-10.1.44/conf/logging.properties
+15-Sep-2025 10:32:18.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Sep-2025 10:32:18.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Sep-2025 10:32:18.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Sep-2025 10:32:18.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+15-Sep-2025 10:32:18.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Sep-2025 10:32:18.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Sep-2025 10:32:18.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+15-Sep-2025 10:32:18.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Sep-2025 10:32:18.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Sep-2025 10:32:18.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Sep-2025 10:32:18.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Sep-2025 10:32:18.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:32:18.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:32:18.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/dell/Desktop/apache-tomcat-10.1.44/temp
+15-Sep-2025 10:32:18.057 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Sep-2025 10:32:19.745 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:32:19.783 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:522)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:266)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1399)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1412)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 13 more
+15-Sep-2025 10:32:19.785 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2419] milliseconds
+15-Sep-2025 10:32:19.883 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Sep-2025 10:32:19.884 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+15-Sep-2025 10:32:19.904 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs]
+15-Sep-2025 10:32:21.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs] has finished in [1,177] ms
+15-Sep-2025 10:32:21.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager]
+15-Sep-2025 10:32:21.284 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager] has finished in [187] ms
+15-Sep-2025 10:32:21.285 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager]
+15-Sep-2025 10:32:21.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager] has finished in [121] ms
+15-Sep-2025 10:32:21.408 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo]
+15-Sep-2025 10:32:22.713 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Sep-2025 10:32:22.777 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo] has finished in [1,368] ms
+15-Sep-2025 10:32:22.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app]
+15-Sep-2025 10:32:22.851 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app] has finished in [72] ms
+15-Sep-2025 10:32:22.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT]
+15-Sep-2025 10:32:22.936 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT] has finished in [82] ms
+15-Sep-2025 10:32:22.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples]
+15-Sep-2025 10:32:23.432 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples] has finished in [495] ms
+15-Sep-2025 10:32:23.434 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets]
+15-Sep-2025 10:32:23.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets] has finished in [38] ms
+15-Sep-2025 10:32:23.492 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3706] milliseconds
+15-Sep-2025 10:32:23.503 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:851)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:799)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+15-Sep-2025 10:32:23.507 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:32:23.508 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Sep-2025 10:32:23.636 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:32:23.650 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:55:24.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+15-Sep-2025 10:55:24.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+15-Sep-2025 10:55:24.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+15-Sep-2025 10:55:24.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Sep-2025 10:55:24.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-79-generic
+15-Sep-2025 10:55:24.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Sep-2025 10:55:24.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/dell/Aigital/sapmachine-jdk-17.0.11_linux-x64_bin/sapmachine-jdk-17.0.11
+15-Sep-2025 10:55:24.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.11+9-LTS
+15-Sep-2025 10:55:24.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            SAP SE
+15-Sep-2025 10:55:24.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:55:24.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:55:24.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/dell/Desktop/apache-tomcat-10.1.44/conf/logging.properties
+15-Sep-2025 10:55:24.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Sep-2025 10:55:24.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Sep-2025 10:55:24.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Sep-2025 10:55:24.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+15-Sep-2025 10:55:24.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Sep-2025 10:55:24.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Sep-2025 10:55:24.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+15-Sep-2025 10:55:24.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Sep-2025 10:55:24.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Sep-2025 10:55:24.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Sep-2025 10:55:24.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Sep-2025 10:55:24.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:55:24.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/dell/Desktop/apache-tomcat-10.1.44
+15-Sep-2025 10:55:24.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/dell/Desktop/apache-tomcat-10.1.44/temp
+15-Sep-2025 10:55:24.104 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Sep-2025 10:55:25.065 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:55:25.110 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:522)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:266)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1399)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1412)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 13 more
+15-Sep-2025 10:55:25.113 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1422] milliseconds
+15-Sep-2025 10:55:25.218 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Sep-2025 10:55:25.218 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+15-Sep-2025 10:55:25.241 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs]
+15-Sep-2025 10:55:26.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs] has finished in [1,257] ms
+15-Sep-2025 10:55:26.502 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager]
+15-Sep-2025 10:55:26.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager] has finished in [128] ms
+15-Sep-2025 10:55:26.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager]
+15-Sep-2025 10:55:26.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager] has finished in [141] ms
+15-Sep-2025 10:55:26.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo]
+15-Sep-2025 10:55:28.901 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Sep-2025 10:55:28.962 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo] has finished in [2,183] ms
+15-Sep-2025 10:55:28.963 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app]
+15-Sep-2025 10:55:29.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app] has finished in [63] ms
+15-Sep-2025 10:55:29.028 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT]
+15-Sep-2025 10:55:29.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT] has finished in [53] ms
+15-Sep-2025 10:55:29.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples]
+15-Sep-2025 10:55:29.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples] has finished in [359] ms
+15-Sep-2025 10:55:29.442 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets]
+15-Sep-2025 10:55:29.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets] has finished in [43] ms
+15-Sep-2025 10:55:29.502 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4388] milliseconds
+15-Sep-2025 10:55:29.515 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:851)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:799)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+15-Sep-2025 10:55:29.516 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:55:29.516 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Sep-2025 10:55:29.599 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Sep-2025 10:55:29.603 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
