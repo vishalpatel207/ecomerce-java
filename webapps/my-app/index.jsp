@@ -1120,11 +1120,11 @@
                                     laptop.put("name", "Gaming Laptop");
                                     laptop.put("price", "₹65,999");
                                     laptop.put("image", "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center");
-                                    laptop.put("description", "High performance gaming laptop for pro gamers");
+                                    laptop.put("description", "High performance gaming laptop for pro gamers thank you for the gaming");
                                     laptop.put("rating", "4.2");
                                     laptop.put("id", "laptop1");
                                     featuredProducts.add(laptop);
-
+                                                                                                        
                                     Map<String, String> headphones = new HashMap<>();
                                     headphones.put("name", "Wireless Headphones");
                                     headphones.put("price", "₹8,999");

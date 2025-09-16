@@ -58,7 +58,6 @@ categories.put("Beauty", beauty);
 </head>
 <body>
     <% String message=request.getParameter("message"); String username=(String) session.getAttribute("username"); Boolean isLoggedIn=(Boolean) session.getAttribute("isLoggedIn"); if (isLoggedIn==null) isLoggedIn=false; %>
-    <!-- NAVBAR & CSS FROM HOME PAGE START -->
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -146,7 +145,6 @@ categories.put("Beauty", beauty);
             border-radius: 2px;
         }
 
-        /* Responsive Design */
         @media (max-width: 1200px) {
             .container {
                 max-width: 100%;
@@ -267,6 +265,9 @@ categories.put("Beauty", beauty);
                 height: 100px;
             }
         } 
+            .custom-border{
+            border: none;
+        }
     </style>
     <nav class="navbar">
         <div class="nav-container">
@@ -357,7 +358,7 @@ categories.put("Beauty", beauty);
                         <div class="card-body text-center">
                             <h5 class="card-title"><%=category.get("name")%></h5>
                             <p class="card-text text-muted"><%=category.get("description")%></p>
-                            <a href="product.jsp?category=<%=entry.getKey()%>" class="btn btn-primary">View Products</a>
+                            <a href="product.jsp?category=<%=entry.getKey()%>" class="btn btn-primary custom-border">View Products</a>
                         </div>
                     </div>
                 </div>

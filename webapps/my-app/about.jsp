@@ -79,7 +79,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Start -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -135,7 +134,6 @@
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
     <div class="about-hero">
         <div class="about-icon"><i class="fas fa-users"></i></div>
         <h1>About ShopEasy</h1>

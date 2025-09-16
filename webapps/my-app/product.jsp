@@ -27,7 +27,7 @@ Map<String, String> laptop = new HashMap<>();
 laptop.put("name", "Gaming Laptop");
 laptop.put("price", "₹65,999");
 laptop.put("image", "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center");
-laptop.put("description", "High performance gaming laptop for pro gamers");
+laptop.put("description", "High performance gaming laptop when the fatch the data base  for pro gamers");
 laptop.put("rating", "4.2");
 laptop.put("id", "laptop1");
 electronicsProducts.add(laptop);
@@ -555,7 +555,7 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
                 <% } %>
             </div>
         <% } %>
-        <div class="text-center mt-4">
+        <div class="text-center mt-4 mb-4">
             <a href="category.jsp" class="btn btn-secondary">
                 <i class="fas fa-arrow-left me-1"></i>Back to Categories
             </a>

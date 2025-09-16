@@ -159,7 +159,6 @@
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
     <div class="contact-hero">
         <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
         <h1>Contact Us</h1>
@@ -170,8 +169,8 @@
             <div class="mb-3">
                 <label for="name">Your Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
+                </div>
+                <div class="mb-3">
                 <label for="email">Your Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
@@ -184,7 +183,7 @@
         <div class="contact-info">
             <div class="contact-info-item">
                 <i class="fas fa-map-marker-alt"></i>
-                <div>123 Main Street, Mumbai, India</div>
+                <div>Ahemdbad-Gujarat , India</div>
             </div>
             <div class="contact-info-item">
                 <i class="fas fa-phone"></i>
@@ -192,10 +191,11 @@
             </div>
             <div class="contact-info-item">
                 <i class="fas fa-envelope"></i>
-                <div>support@shopeasy.com</div>
+                <div>patelvishal77890@gmail.com</div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
