@@ -460,7 +460,7 @@
             }
 
             .footer-section ul li a {
-                color: #a0aec0;
+                color: white;
                 text-decoration: none;
                 transition: color 0.3s ease;
             }
@@ -883,7 +883,7 @@
 
                             <div class="nav-actions d-none d-lg-flex">
                                 <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-                                <a href="#" class="nav-icon" title="Shopping Cart"><i
+                                <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i
                                         class="fas fa-shopping-cart"></i></a>
                                 <% if (isLoggedIn) { %>
                                     <div class="user-info">

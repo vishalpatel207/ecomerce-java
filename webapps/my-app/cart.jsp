@@ -731,7 +731,7 @@ for (Map<String, String> item : cart) {
         </div>
         <div class="nav-actions d-none d-lg-flex">
             <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-            <a href="#" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
             <% if (isLoggedIn) { %>
                 <div class="user-info">
                     <span class="welcome-text">Welcome, <%= username %>!</span>
@@ -806,7 +806,7 @@ Start Shopping
                                 <p class="text-muted mb-0">Product ID: <%=item.get("id")%></p>
                             </div>
                             <div class="col-md-2">
-                                <h6 class="text-primary mb-0"><%=item.get("price")%></h6>
+                                <h6 class="text-black mb-0"><%=item.get("price")%></h6>
                             </div>
                             <div class="col-md-3">
                                 <div class="quantity-controls">
@@ -833,7 +833,7 @@ Start Shopping
                                     <input type="hidden" name="removeId" value="<%=item.get("id")%>">
                                     <button type="submit" class="btn  btn-sm" 
                                             onclick="return confirm('Remove this item from cart?')">
-                                        <i class="fas fa-trash"></i>
+                                        <i class="fas fa-trash" style="color: white;"></i>
                                     </form>
                             </div>
                         </div>
@@ -855,7 +855,7 @@ Start Shopping
                         <hr>
                         <div class="d-flex justify-content-between mb-4">
                             <h5>Total:</h5>
-                            <h5 class="text-primary">₹<%=String.format("%.2f", total)%></h5>
+                            <h5 class="text-black">₹<%=String.format("%.2f", total)%></h5>
                         </div>
                         <button id="rzp-button1" class="btn btn-primary w-100 mb-3">
                             <i class="fas fa-credit-card me-2"></i>Pay with Razorpay

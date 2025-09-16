@@ -220,7 +220,7 @@ body {
 
 .slider-btn:hover {
     background: #667eea;
-    transform: scale(1.1);      
+    transform: scale(1.1);
 }
 
 .slider-dots {
@@ -444,7 +444,7 @@ body {
 }
 
 .footer {
-                    margin-top: 20px;
+    margin-top: 20px;
 
     background: #2d3748;
     color: white;
@@ -494,7 +494,7 @@ body {
 }
 
 .footer-section ul li a {
-    color: #a0aec0;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -690,46 +690,46 @@ body.signup-page {
         height: auto;
         padding: 15px 20px;
     }
-    
+
     .nav-search {
         order: 3;
         width: 100%;
         margin: 15px 0 0 0;
         max-width: none;
     }
-    
+
     .nav-links {
         gap: 15px;
     }
-    
+
     .nav-actions {
         gap: 15px;
     }
-    
+
     .slide-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .slide-content p {
         font-size: 1.1rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .categories-grid,
     .products-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
-   
-    
+
+
+
     .success-message {
         top: 100px;
         left: 20px;
@@ -743,27 +743,27 @@ body.signup-page {
     .container {
         padding: 0 15px;
     }
-    
+
     .nav-container {
         padding: 10px 15px;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .slide-content h1 {
         font-size: 2rem;
     }
-    
+
     .form-container {
         padding: 1.5rem;
     }
-    
+
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .success-message {
         top: 80px;
         left: 10px;
@@ -778,6 +778,7 @@ body.signup-page {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -789,6 +790,7 @@ body.signup-page {
         opacity: 0;
         transform: translateX(-50%) translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
@@ -815,7 +817,7 @@ body.signup-page {
     .nav-links {
         display: none;
     }
-    
+
     .nav-actions {
         margin-left: auto;
     }

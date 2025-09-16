@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Tomcat Project (WAR)",
+			"type": "shell",
+			"command": "jar -cvf my-app.war -C webapps/my-app .",
+			"args": [],
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

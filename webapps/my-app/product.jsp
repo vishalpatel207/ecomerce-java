@@ -448,7 +448,7 @@ List<Map<String, String>> prodList = products.getOrDefault(category, new ArrayLi
             </div>
             <div class="nav-actions d-none d-lg-flex">
                 <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-                <a href="#" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
                 <% if (isLoggedIn) { %>
                     <div class="user-info">
                         <span class="welcome-text">Welcome, <%= username %>!</span>
