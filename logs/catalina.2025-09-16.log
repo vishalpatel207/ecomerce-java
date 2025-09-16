@@ -1,0 +1,50 @@
+16-Sep-2025 15:14:27.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+16-Sep-2025 15:14:27.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+16-Sep-2025 15:14:27.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+16-Sep-2025 15:14:27.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-Sep-2025 15:14:27.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.8.0-79-generic
+16-Sep-2025 15:14:27.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Sep-2025 15:14:27.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/dell/Aigital/sapmachine-jdk-17.0.11_linux-x64_bin/sapmachine-jdk-17.0.11
+16-Sep-2025 15:14:27.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.11+9-LTS
+16-Sep-2025 15:14:27.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            SAP SE
+16-Sep-2025 15:14:27.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/dell/Desktop/apache-tomcat-10.1.44
+16-Sep-2025 15:14:27.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/dell/Desktop/apache-tomcat-10.1.44
+16-Sep-2025 15:14:27.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/dell/Desktop/apache-tomcat-10.1.44/conf/logging.properties
+16-Sep-2025 15:14:27.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Sep-2025 15:14:27.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Sep-2025 15:14:27.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Sep-2025 15:14:27.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+16-Sep-2025 15:14:27.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Sep-2025 15:14:27.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Sep-2025 15:14:27.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+16-Sep-2025 15:14:27.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Sep-2025 15:14:27.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Sep-2025 15:14:27.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Sep-2025 15:14:27.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Sep-2025 15:14:27.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/dell/Desktop/apache-tomcat-10.1.44
+16-Sep-2025 15:14:27.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/dell/Desktop/apache-tomcat-10.1.44
+16-Sep-2025 15:14:27.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/dell/Desktop/apache-tomcat-10.1.44/temp
+16-Sep-2025 15:14:27.494 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+16-Sep-2025 15:14:28.440 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Sep-2025 15:14:28.630 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1867] milliseconds
+16-Sep-2025 15:14:28.822 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Sep-2025 15:14:28.823 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+16-Sep-2025 15:14:28.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs]
+16-Sep-2025 15:14:30.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/docs] has finished in [1,154] ms
+16-Sep-2025 15:14:30.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager]
+16-Sep-2025 15:14:30.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/host-manager] has finished in [178] ms
+16-Sep-2025 15:14:30.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager]
+16-Sep-2025 15:14:30.281 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/manager] has finished in [94] ms
+16-Sep-2025 15:14:30.282 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo]
+16-Sep-2025 15:14:32.633 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Sep-2025 15:14:32.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/fmt-demo] has finished in [2,488] ms
+16-Sep-2025 15:14:32.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app]
+16-Sep-2025 15:14:33.001 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/my-app] has finished in [227] ms
+16-Sep-2025 15:14:33.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT]
+16-Sep-2025 15:14:33.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/ROOT] has finished in [123] ms
+16-Sep-2025 15:14:33.130 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples]
+16-Sep-2025 15:14:33.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/examples] has finished in [851] ms
+16-Sep-2025 15:14:33.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets]
+16-Sep-2025 15:14:34.019 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/dell/Desktop/apache-tomcat-10.1.44/webapps/assets] has finished in [37] ms
+16-Sep-2025 15:14:34.039 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Sep-2025 15:14:34.106 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5474] milliseconds

@@ -104,7 +104,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Start -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">

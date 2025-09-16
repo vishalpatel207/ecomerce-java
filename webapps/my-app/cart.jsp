@@ -86,7 +86,7 @@ for (Map<String, String> item : cart) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <style>
-        /* --- NAVBAR CSS FROM HOME PAGE --- */
+
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -873,14 +873,13 @@ Start Shopping
                         document.getElementById('rzp-button1').onclick = function(e){
                             e.preventDefault();
                             var options = {
-                                key: "rzp_test_YourKeyHere", // Replace with your Razorpay Test Key
-                                amount: razorpayAmount, // Amount in paise
+                                key: "rzp_test_YourKeyHere", 
+                                amount: razorpayAmount, 
                                 currency: "INR",
                                 name: "ShopEasy",
                                 description: "Order Payment",
                                 image: "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
                                 handler: function (response){
-                                    // On payment success, redirect or show message
                                     window.location.href = 'thankyou.jsp?payment_id=' + response.razorpay_payment_id;
                                 },
                                 prefill: {

@@ -502,7 +502,6 @@
             }
 
             .contact-info i {
-                color: #667eea;
                 width: 20px;
             }
 
