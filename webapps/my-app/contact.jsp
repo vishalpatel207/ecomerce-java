@@ -3,12 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ShopEasy</title>
-    <link rel="stylesheet" href="css/style.css?v=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <%@ include file="includes/head.jsp" %>
     <style>
         .contact-hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -104,62 +100,9 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <i class="fas fa-shopping-bag"></i>
-                <span>ShopEasy</span>
-            </div>
-            <div class="nav-search d-none d-lg-flex">
-                <input type="text" placeholder="Search products..." class="search-input">
-                <button class="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="nav-links">
-                <a href="index.jsp" class="nav-link">Home</a>
-                <a href="category.jsp" class="nav-link">Categories</a>
-                <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
-                <a href="cart.jsp" class="nav-link">Cart</a>
-                <a href="about.jsp" class="nav-link">About</a>
-                <a href="contact.jsp" class="nav-link active">Contact</a>
-            </div>
-            <div class="nav-actions d-none d-lg-flex">
-                <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-                <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
-                <a href="login.jsp" class="nav-icon" title="Login"><i class="fas fa-user"></i></a>
-            </div>
-            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Open menu" style="margin-left: 38px;">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="navOffcanvasLabel">ShopEasy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <div class="mb-3">
-                <div class="d-flex align-items-center p-2 rounded" style="background:#f8f9fa;">
-                    <input type="text" class="form-control form-control-sm me-2" placeholder="Search products..." id="offcanvasSearchInput">
-                    <button class="btn btn-primary btn-sm" id="offcanvasSearchBtn"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-            <nav class="nav flex-column mb-3">
-                <a href="index.jsp" class="nav-link">Home</a>
-                <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
-                <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
-                <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
-                <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-                <a href="contact.jsp" class="nav-link active" data-bs-dismiss="offcanvas">Contact</a>
-            </nav>
-            <div class="mt-auto d-flex align-items-center gap-3">
-                <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>
-                <a href="#" class="text-secondary"><i class="fas fa-shopping-cart"></i></a>
-                <a href="login.jsp" class="btn btn-primary btn-sm" data-bs-dismiss="offcanvas">Login</a>
-            </div>
-        </div>
-    </div>
-    <div class="contact-hero">
+    <%@ include file="includes/navbar.jsp" %>
+    
+    <div class="contact-hero" style="margin-top: 70px;">
         <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
         <h1>Contact Us</h1>
         <p>Have a question, feedback, or need help? Our team is here for you 24/7. Reach out and we’ll get back to you fast!</p>

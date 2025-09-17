@@ -1,1417 +1,452 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ShopEasy - Your Online Shopping Destination</title>
-        <link rel="stylesheet" href="css/style.css?v=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ShopEasy - Your Premium Online Shopping Destination</title>
+    <%@ include file="includes/head.jsp" %>
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 90vh;
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            z-index: 2;
+            color: white;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-bg-decoration {
+            position: absolute;
+            top: 0;
+            right: -10%;
+            width: 60%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,0 1000,300 1000,1000 0,700"/></svg>') no-repeat;
+            background-size: cover;
+        }
+        
+        .btn-hero {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .btn-hero:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .btn-hero-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        
+        .btn-hero-outline:hover {
+            background: white;
+            color: #667eea;
+            border-color: white;
+        }
+        
+        .features-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: none;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .cta-section {
+            background: #2d3748;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+        
+        .newsletter-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .newsletter-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-title {
+                font-size: 3rem;
             }
-
-            .offcanvas {
-                max-width: 85% !important;
-            }
-
-            body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                line-height: 1.6;
-                color: #333;
-                background-color: #f8f9fa;
-            }
-
-            .navbar {
-                background: rgba(255, 255, 255, 0.95);
-                backdrop-filter: blur(10px);
-                position: fixed !important;
-                top: 0 !important;
-                left: 0 !important;
-                right: 0 !important;
-                z-index: 1000 !important;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            }
-
-            .nav-container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 70px;
-            }
-
-            .nav-brand {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-size: 1.8rem;
-                font-weight: 700;
-                color: #667eea;
-                text-decoration: none;
-            }
-
-            .nav-brand i {
-                font-size: 2rem;
-            }
-
-            .nav-search {
-                display: flex;
-                align-items: center;
-                background: #f8f9fa;
-                border-radius: 25px;
-                padding: 8px 15px;
-                flex: 1;
-                max-width: 400px;
-                margin: 0 20px;
-            }
-
-            .search-input {
-                border: none;
-                background: transparent;
-                outline: none;
-                flex: 1;
-                padding: 5px 10px;
-                font-size: 14px;
-            }
-
-            .search-btn {
-                background: #667eea;
-                border: none;
-                color: white;
-                padding: 5px 11px;
-                border-radius: 50%;
-                cursor: pointer;
-                transition: all 0.3s ease;
-            }
-
-            .nav-links {
-                display: flex;
-                gap: 30px;
-            }
-
-            .nav-link {
-                color: #4a5568;
-                text-decoration: none;
-                font-weight: 500;
-                transition: color 0.3s ease;
-                position: relative;
-            }
-
-            .nav-link:hover,
-            .nav-link.active {
-                color: #667eea;
-            }
-
-            .nav-actions {
-                display: flex;
-                gap: 20px;
-                padding-left: 20px;
-            }
-
-            .nav-icon {
-                color: #4a5568;
-                font-size: 1.2rem;
-                text-decoration: none;
-                transition: all 0.3s ease;
-            }
-
-            .nav-icon:hover {
-                color: #667eea;
-                transform: scale(1.1);
-            }
-
-            .user-info {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .welcome-text {
-                color: #667eea;
-                font-weight: 600;
-                font-size: 14px;
-                background: rgba(102, 126, 234, 0.1);
-                padding: 5px 12px;
-                border-radius: 15px;
-                white-space: nowrap;
-            }
-
-            .navbar .btn.d-lg-none {
-                border: 1px solid #e2e8f0;
-            }
-
-            .hero-slider {
-                position: relative;
-                height: 100vh;
-                overflow: hidden;
-                margin-top: 70px !important;
-            }
-
-            .slider-container {
-                position: relative;
-                height: 100%;
-            }
-
-            .slide {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .slide.active {
-                opacity: 1;
-            }
-
-            .slide-bg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-            }
-
-            .slide-content {
-                text-align: center;
-                color: white;
-                z-index: 2;
-                max-width: 600px;
-                padding: 0 20px;
-            }
-
-            .slide-content h1 {
-                font-size: 3.5rem;
-                font-weight: 700;
-                margin-bottom: 20px;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            }
-
-            .slide-content p {
-                font-size: 1.3rem;
-                margin-bottom: 30px;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            }
-
-            .btn {
-                display: inline-block;
-                padding: 12px 30px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: white;
-                text-decoration: none;
-                border: none;
-                border-radius: 25px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-                font-size: 14px;
-            }
-
-            .btn:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-            }
-
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-            }
-
-            .section-title {
-                                margin-top: 50px;
-
-                text-align: center;
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title {
                 font-size: 2.5rem;
-                font-weight: 700;
-                color: #2d3748;
-                margin-bottom: 50px;
-                position:relative;
-
-                }
-
-            .section-title::after {
-                content: '';
-                position: absolute;
-                bottom: -10px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 80px;
-                height: 4px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                border-radius: 2px;
             }
-
-            .categories {
-                padding: 100px 0;
-                background: white;
-            }   
-
-            .categories-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 30px;
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
             }
-
-            .category-card {
+            
+            .btn-hero {
+                padding: 12px 30px;
+                font-size: 1rem;
+                margin-bottom: 15px;
+                display: block;
                 text-align: center;
-                padding: 40px 20px;
-                border-radius: 15px;
-                background: #f8f9fa;
-                transition: all 0.3s ease;
-                cursor: pointer;
+                margin-right: 0;
             }
-
-            .category-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-                background: white;
+            
+            .features-section {
+                padding: 60px 0;
             }
-
-            .category-icon {
-                width: 80px;
-                height: 80px;
-                margin: 0 auto 20px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                border-radius: 50%;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-                color: white;
+            
+            .feature-card {
+                padding: 30px 20px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 70vh;
+                text-align: center;
+            }
+            
+            .hero-title {
                 font-size: 2rem;
             }
-
-            .category-card h3 {
-                font-size: 1.5rem;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 10px;
+            
+            .section-title {
+                font-size: 2rem;
             }
-
-            .category-card p {
-                color: #718096;
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 1.75rem;
+            }
+            
+            .hero-subtitle {
                 font-size: 1rem;
             }
-
-            .products {
-                padding: 0 0;
-                background: #f8f9fa;
-            }
-
-            .products-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
-            }
-
-            .product-card {
-                background: white;
-                border-radius: 15px;
-                overflow: hidden;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
-            }
-
-            .product-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            }
-
-            .product-image {
-                position: relative;
-                overflow: hidden;
-            }
-
-            .product-image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.3s ease;
-            }
-
-            .product-card:hover .product-image img {
-                transform: scale(1.1);
-            }
-
-            .product-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.7);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-
-            .product-card:hover .product-overlay {
-                opacity: 1;
-            }
-
-            .product-info {
-                padding: 25px;
-            }
-
-            .product-info h3 {
-                font-size: 1.3rem;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 10px;
-            }
-
-            .product-price {
-                font-size: 1.5rem;
-                font-weight: 700;
-                color: #667eea;
-                margin-bottom: 15px;
-            }
-
-            .product-rating {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                margin-bottom: 20px;
-            }
-
-            .product-rating i {
-                color: #fbbf24;
-                font-size: 14px;
-            }
-
-            .product-rating span {
-                color: #718096;
-                font-size: 14px;
-                margin-left: 5px;
-            }
-
-            .footer {
-                margin-top: 20px;
-                background: #2d3748;
-                color: white;
-                padding: 60px 0 20px;
-            }
-
-            ol,
-            ul {
-                padding-left: 0 !important;
-            }
-
-            .footer-content {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 40px;
-                margin-bottom: 40px;
-            }
-
-            .footer-brand {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-size: 1.5rem;
-                font-weight: 700;
-                color: #667eea;
-                margin-bottom: 20px;
-            }
-
-            .footer-brand i {
-                font-size: 1.8rem;
-            }
-
-            .footer-section p {
-                color: #a0aec0;
-                line-height: 1.6;
-                margin-bottom: 20px;
-            }
-
-            .footer-section h3 {
-                font-size: 1.2rem;
-                font-weight: 600;
-                margin-bottom: 20px;
-                color: white;
-            }
-
-            .footer-section ul {
-                list-style: none;
-            }
-
-            .footer-section ul li {
-                margin-bottom: 10px;
-            }
-
-            .footer-section ul li a {
-                color: white;
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
-
-            .footer-section ul li a:hover {
-                color: #667eea;
-            }
-
-            .social-links {
-                display: flex;
-                gap: 15px;
-            }
-
-            .social-links a {
-                width: 40px;
-                height: 40px;
-                background: #4a5568;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                text-decoration: none;
-                transition: all 0.3s ease;
-            }
-
-            .social-links a:hover {
-                background: #667eea;
-                transform: translateY(-3px);
-            }
-
-            .contact-info p {
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-bottom: 10px;
-                color: #a0aec0;
-            }
-
-            .contact-info i {
-                width: 20px;
-            }
-
-            .footer-bottom {
-                border-top: 1px solid #4a5568;
-                padding-top: 20px;
-                text-align: center;
-                color: #a0aec0;
-            }
-
-            .success-message {
-                position: fixed;
-                top: 80px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-                color: white;
-                padding: 15px 25px;
-                border-radius: 8px;
-                box-shadow: 0 10px 25px rgba(72, 187, 120, 0.3);
-                z-index: 1001;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                animation: slideDown 0.3s ease-out;
-                max-width: 90%;
-            }
-
-            .success-message .close-btn {
-                background: none;
-                border: none;
-                color: white;
-                font-size: 20px;
-                cursor: pointer;
-                padding: 0;
-                margin-left: 10px;
-                opacity: 0.8;
-                transition: opacity 0.3s ease;
-            }
-
-            .success-message .close-btn:hover {
-                opacity: 1;
-            }
-
-            @keyframes slideDown {
-                from {
-                    opacity: 0;
-                    transform: translateX(-50%) translateY(-20px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateX(-50%) translateY(0);
-                }
-            }
-
-            /* Mobile First Responsive Design */
-            @media (max-width: 1200px) {
-                .container {
-                    max-width: 100%;
-                    padding: 0 15px;
-                }
-                
-                .categories-grid,
-                .products-grid {
-                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                    gap: 20px;
-                }
-            }
-
-            @media (max-width: 992px) {
-                .nav-links {
-                    display: none !important;
-                }
-
-                .mobile-menu-btn {
-                    display: block !important;
-                }
-
-                .nav-container {
-                    flex-wrap: wrap;
-                    height: auto;
-                    padding: 15px 20px;
-                    position: relative;
-                }
-
-                .nav-search {
-                    order: 3;
-                    width: 100%;
-                    margin: 15px 0 0 0;
-                    max-width: none;
-                }
-
-                .nav-actions {
-                    gap: 10px;
-                }
-
-                .welcome-text {
-                    display: none;
-                }
-
-                .slide-content h1 {
-                    font-size: 2.8rem;
-                }
-
-                .slide-content p {
-                    font-size: 1.2rem;
-                }
-
-                .section-title {
-                    font-size: 2.2rem;
-                }
-
-                .categories-grid,
-                .products-grid {
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 20px;
-                }
-
-                .footer-content {
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 30px;
-                }
-
             
-                .success-message {
-                    top: 100px;
-                    left: 20px;
-                    right: 20px;
-                    transform: none;
-                    max-width: none;
-                }
+            .section-title {
+                font-size: 1.75rem;
             }
-
-            @media (max-width: 768px) {
-                .nav-container {
-                    padding: 10px 15px;
-                }
-
-                .slide-content h1 {
-                    font-size: 2.2rem;
-                }
-
-                .slide-content p {
-                    font-size: 1.1rem;
-                }
-
-                .section-title {
-                    font-size: 1.8rem;
-                }
-
-                .categories-grid,
-                .products-grid {
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 15px;
-                }
-
-                .category-card,
-                .product-card {
-                    padding: 20px 15px;
-                }
-
-                .category-icon {
-                    width: 60px;
-                    height: 60px;
-                    font-size: 1.5rem;
-                }
-
-                .product-image {
-                    height: 200px;
-                }
-
-                .footer-content {
-                    grid-template-columns: 1fr;
-                    text-align: center;
-                    gap: 25px;
-                }
-
-                .success-message {
-                    top: 90px;
-                    left: 15px;
-                    right: 15px;
-                    padding: 12px 20px;
-                    font-size: 14px;
-                }
-
-                .hero-slider {
-                    height: 70vh;
-                }
+            
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
             }
-
-            @media (max-width: 576px) {
-                .container {
-                    padding: 0 10px;
-                }
-
-                .nav-container {
-                    padding: 8px 10px;
-                }
-
-                .nav-brand {
-                    font-size: 1.5rem;
-                }
-
-                .nav-brand i {
-                    font-size: 1.5rem;
-                }
-
-                .slide-content h1 {
-                    font-size: 1.8rem;
-                    margin-bottom: 15px;
-                }
-
-                .slide-content p {
-                    font-size: 1rem;
-                    margin-bottom: 20px;
-                }
-
-                .section-title {
-                    font-size: 1.6rem;
-                    margin-bottom: 30px;
-                }
-
-                .categories-grid,
-                .products-grid {
-                    grid-template-columns: 1fr;
-                    gap: 15px;
-                }
-
-                .category-card,
-                .product-card {
-                    padding: 15px 10px;
-                }
-
-                .category-icon {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 1.2rem;
-                }
-
-                .product-image {
-                    height: 180px;
-                }
-
-                .product-info h3 {
-                    font-size: 1.1rem;
-                }
-
-                .product-price {
-                    font-size: 1.3rem;
-                }
-
-                .btn {
-                    padding: 10px 20px;
-                    font-size: 13px;
-                }
-
-                .hero-slider {
-                    height: 60vh;
-                }
-
-                .success-message {
-                    top: 80px;
-                    left: 10px;
-                    right: 10px;
-                    padding: 10px 15px;
-                    font-size: 13px;
-                }
-
-                .footer {
-                    padding: 40px 0 15px;
-                }
-
-                .footer-content {
-                    gap: 20px;
-                }
+            
+            .feature-card {
+                padding: 25px 15px;
             }
-
-            @media (max-width: 480px) {
-                .slide-content h1 {
-                    font-size: 1.5rem;
-                }
-
-                .slide-content p {
-                    font-size: 0.9rem;
-                }
-
-                .section-title {
-                    font-size: 1.4rem;
-                }
-
-                .category-card h3,
-                .product-info h3 {
-                    font-size: 1rem;
-                }
-
-                .product-price {
-                    font-size: 1.2rem;
-                }
-
-                .btn {
-                    padding: 8px 16px;
-                    font-size: 12px;
-                }
-
-                .hero-slider {
-                    height: 50vh;
-                }
+            
+            .stats-section {
+                padding: 40px 0;
             }
-
-            /* Extra small devices */
-            @media (max-width: 360px) {
-                .container {
-                    padding: 0 5px;
-                }
-
-                .nav-container {
-                    padding: 5px 8px;
-                }
-
-                .slide-content h1 {
-                    font-size: 1.3rem;
-                }
-
-                .slide-content p {
-                    font-size: 0.8rem;
-                }
-
-                .section-title {
-                    font-size: 1.2rem;
-                }
-
-                .category-card,
-                .product-card {
-                    padding: 12px 8px;
-                }
-
-                .btn {
-                    padding: 6px 12px;
-                    font-size: 11px;
-                }
+            
+            .cta-section {
+                padding: 60px 0;
             }
-        </style>
-    </head>
-
-    <body>
-        <% String message=request.getParameter("message"); String username=(String) session.getAttribute("username");
-            Boolean isLoggedIn=(Boolean) session.getAttribute("isLoggedIn"); if (isLoggedIn==null) isLoggedIn=false; %>
-
-            <% if (message !=null) { %>
-                <div class="success-message">
-                    <i class="fas fa-check-circle"></i>
-                    <%= message %>
-                        <button onclick="this.parentElement.style.display='none'" class="close-btn">&times;</button>
-                </div>
-                <% } %>
-
-                    <nav class="navbar">
-                        <div class="nav-container">
-                            <div class="nav-brand">
-                                <i class="fas fa-shopping-bag"></i>
-                                <span>ShopEasy</span>
-                            </div>
-
-                            <div class="nav-search d-none d-lg-flex">
-                                <input type="text" placeholder="Search products..." class="search-input">
-                                <button class="search-btn"><i class="fas fa-search"></i></button>
-                            </div>
-
-                            <div class="nav-links">
-                                <a href="index.jsp" class="nav-link active">Home</a>
-                                <a href="category.jsp" class="nav-link">Categories</a>
-                                <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
-                                <a href="cart.jsp" class="nav-link">Cart</a>
-                                <a href="about.jsp" class="nav-link">About</a>
-                                <a href="contact.jsp" class="nav-link">Contact</a>
-                            </div>
-
-                            <div class="nav-actions d-none d-lg-flex">
-                                <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-                                <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i
-                                        class="fas fa-shopping-cart"></i></a>
-                                <% if (isLoggedIn) { %>
-                                    <div class="user-info">
-                                        <span class="welcome-text">Welcome, <%= username %>!</span>
-                                        <a href="logout.jsp" class="nav-icon" title="Logout"><i
-                                                class="fas fa-sign-out-alt"></i></a>
-                                    </div>
-                                    <% } else { %>
-                                        <a href="login.jsp" class="nav-icon" title="Login"><i
-                                                class="fas fa-user"></i></a>
-                                        <% } %>
-                            </div>
-
-                            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Open menu"
-                                style="margin-left: 38px;">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </div>
-                    </nav>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas"
-                        aria-labelledby="navOffcanvasLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="navOffcanvasLabel">ShopEasy</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body d-flex flex-column">
-                            <div class="mb-3">
-                                <div class="d-flex align-items-center p-2 rounded" style="background:#f8f9fa;">
-                                    <input type="text" class="form-control form-control-sm me-2"
-                                        placeholder="Search products..." id="offcanvasSearchInput">
-                                    <button class="btn btn-primary btn-sm" id="offcanvasSearchBtn"><i
-                                            class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                            <nav class="nav flex-column mb-3">
-                                <a href="index.jsp" class="nav-link">Home</a>
-                                <a href="category.jsp" class="nav-link" data-bs-dismiss="offcanvas">Categories</a>
-                                <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
-                                <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
-                                <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-                                <a href="contact.jsp" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
-                            </nav>
-                            <div class="mt-auto d-flex align-items-center gap-3">
-                                <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>
-                                <a href="#" class="text-secondary"><i class="fas fa-shopping-cart"></i></a>
-                                <% if (isLoggedIn) { %>
-                                    <span class="text-primary fw-semibold">Welcome, <%= username %></span>
-                                    <a href="logout.jsp" class="btn btn-outline-primary btn-sm"
-                                        data-bs-dismiss="offcanvas">Logout</a>
-                                    <% } else { %>
-                                        <a href="login.jsp" class="btn btn-primary btn-sm"
-                                            data-bs-dismiss="offcanvas">Login</a>
-                                        <% } %>
-                            </div>
+        }
+    </style>
+</head>
+<body>
+    <%@ include file="includes/navbar.jsp" %>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-decoration"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Welcome to ShopEasy</h1>
+                        <p class="hero-subtitle">Discover amazing products at unbeatable prices. Shop with confidence and enjoy fast, secure delivery.</p>
+                        <div class="hero-buttons">
+                            <a href="category.jsp" class="btn-hero">Shop Now</a>
+                            <a href="about.jsp" class="btn-hero btn-hero-outline">Learn More</a>
                         </div>
                     </div>
-
-                    <section class="hero-slider">
-                        <div class="slider-container">
-                            <div class="slide active">
-                                <div class="slide-content">
-                                    <h1>Welcome to ShopEasy</h1>
-                                    <p>Discover amazing products at unbeatable prices</p>
-                                    <a href="#products" class="btn btn-primary">Shop Now</a>
-                                </div>
-                                <div class="slide-bg"
-                                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                            </div>
-
-                            <div class="slide">
-                                <div class="slide-content">
-                                    <h1>New Collection</h1>
-                                    <p>Latest trends and fashion items</p>
-                                    <a href="#products" class="btn btn-primary">Explore</a>
-                                </div>
-                                <div class="slide-bg"
-                                    style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                            </div>
-
-
-                            <div class="slide">
-                                <div class="slide-content">
-                                    <h1>Electronics Sale</h1>
-                                    <p>Up to 50% off on all electronics</p>
-                                    <a href="#products" class="btn btn-primary">Buy Now</a>
-                                </div>
-                                <div class="slide-bg"
-                                    style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                            </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <i class="fas fa-shopping-bag" style="font-size: 10rem; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose ShopEasy?</h2>
+            <p class="section-subtitle">We provide the best shopping experience with premium features and exceptional service</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
                         </div>
-
-                        <div class="slider-nav">
-                            <button class="slider-btn prev" onclick="changeSlide(-1)"><i
-                                    class="fas fa-chevron-left"></i></button>
-                            <button class="slider-btn next" onclick="changeSlide(1)"><i
-                                    class="fas fa-chevron-right"></i></button>
+                        <h4>Fast Delivery</h4>
+                        <p>Get your orders delivered quickly with our express shipping options. Free delivery on orders above ₹500.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
                         </div>
-
-                        <div class="slider-dots">
-                            <span class="dot active" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
+                        <h4>Secure Shopping</h4>
+                        <p>Shop with confidence knowing your data is protected with bank-level security and encrypted transactions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
                         </div>
-                    </section>
-
-                    <!-- Ecommerce Section Start -->
-                    <% String[]
-                        ecommerceImages={ "https://images.unsplash.com/photo-1515168833906-d2a3b82b1a48?w=600&h=400&fit=crop&crop=center"
-                        , "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center"
-                        , "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&h=400&fit=crop&crop=center"
-                        , "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop&crop=center"
-                        }; int imgIdx=(int)(Math.random() * ecommerceImages.length); %>
-                        <section class="ecommerce-section"
-                            style="padding: 80px 0; background: linear-gradient(135deg, #f8fafc 0%, #e9e4f0 100%);">
-                            <div class="container">
-                                <div class="row align-items-center flex-column-reverse flex-md-row">
-                                    <div class="col-12 col-md-6 mt-4 mt-md-0 d-flex ">
-                                        <img src="<%= ecommerceImages[imgIdx] %>" alt="Ecommerce"
-                                            class="img-fluid rounded shadow w-100"
-                                            style="max-width:420px; max-height:500px; object-fit:cover;">
-                                    </div>
-                                    <div
-                                        class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
-                                        <h2
-                                            style="font-size:2.3rem; font-weight:700; color:#667eea; margin-bottom:20px;">
-                                            Why Shop with ShopEasy?</h2>
-                                        <ul style="list-style:none; padding:0; margin-bottom:25px;">
-                                            <li style="margin-bottom:15px; font-size:1.1rem;"><i
-                                                    class="fas fa-check-circle text-success me-2"></i>Wide range of
-                                                products & categories</li>
-                                            <li style="margin-bottom:15px; font-size:1.1rem;"><i
-                                                    class="fas fa-check-circle text-success me-2"></i>Secure payments &
-                                                fast delivery</li>
-                                            <li style="margin-bottom:15px; font-size:1.1rem;"><i
-                                                    class="fas fa-check-circle text-success me-2"></i>Easy returns &
-                                                24/7 support</li>
-                                            <li style="margin-bottom:15px; font-size:1.1rem;"><i
-                                                    class="fas fa-check-circle text-success me-2"></i>Exclusive deals &
-                                                offers</li>
-                                        </ul>
-                                        <a href="#products" class="btn btn-primary"
-                                            style="font-size:1.1rem; padding:12px 32px;">Start Shopping</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Ecommerce Section End -->
-
-                        <section class="categories" id="categories">
-                            <div class="container">
-                                <h2 class="section-title">Shop by Category</h2>
-                                <div class="categories-grid">
-                                    <%
-                                    // Dynamic categories with images and descriptions
-                                    Map<String, Map<String, String>> categories = new HashMap<>();
-                                    Map<String, String> electronics = new HashMap<>();
-                                    electronics.put("name", "Electronics");
-                                    electronics.put("description", "Latest gadgets and devices");
-                                    electronics.put("image", "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop&crop=center");
-                                    electronics.put("icon", "fas fa-laptop");
-
-                                    Map<String, String> fashion = new HashMap<>();
-                                    fashion.put("name", "Fashion");
-                                    fashion.put("description", "Trendy clothes and accessories");
-                                    fashion.put("image", "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop&crop=center");
-                                    fashion.put("icon", "fas fa-tshirt");
-
-                                    Map<String, String> home = new HashMap<>();
-                                    home.put("name", "Home & Garden");
-                                    home.put("description", "Everything for your home");
-                                    home.put("image", "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center");
-                                    home.put("icon", "fas fa-home");
-
-                                    Map<String, String> sports = new HashMap<>();
-                                    sports.put("name", "Sports");
-                                    sports.put("description", "Sports equipment and gear");
-                                    sports.put("image", "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center");
-                                    sports.put("icon", "fas fa-gamepad");
-
-                                    Map<String, String> books = new HashMap<>();
-                                    books.put("name", "Books");
-                                    books.put("description", "Educational and entertainment books");
-                                    books.put("image", "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=center");
-                                    books.put("icon", "fas fa-book");
-
-                                    Map<String, String> beauty = new HashMap<>();
-                                    beauty.put("name", "Beauty");
-                                    beauty.put("description", "Cosmetics and personal care");
-                                    beauty.put("image", "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop&crop=center");
-                                    beauty.put("icon", "fas fa-palette");
-
-                                    categories.put("Electronics", electronics);
-                                    categories.put("Fashion", fashion);
-                                    categories.put("Home", home);
-                                    categories.put("Sports", sports);
-                                    categories.put("Books", books);
-                                    categories.put("Beauty", beauty);
-
-                                    for(Map.Entry<String, Map<String, String>> entry : categories.entrySet()) { 
-                                        Map<String, String> category = entry.getValue();
-                                    %>
-                                        <div class="category-card" onclick="window.location.href='product.jsp?category=<%=entry.getKey()%>'">
-                                            <div class="category-icon">
-                                                <i class="<%=category.get("icon")%>"></i>
-                                            </div>
-                                            <h3><%=category.get("name")%></h3>
-                                            <p><%=category.get("description")%></p>
-                                        </div>
-                                    <% } %>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="products" id="products">
-                            <div class="container">
-                                <h2 class="section-title">Featured Products</h2>
-                                <div class="products-grid">
-                                    <%
-                                    // Dynamic featured products
-                                    List<Map<String, String>> featuredProducts = new ArrayList<>();
-                                    
-                                    Map<String, String> phone = new HashMap<>();
-                                    phone.put("name", "Smartphone Pro");
-                                    phone.put("price", "₹25,999");
-                                    phone.put("image", "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop&crop=center");
-                                    phone.put("description", "Latest Smartphone Pro with advanced features and 5G connectivity");
-                                    phone.put("rating", "4.5");
-                                    phone.put("id", "phone1");
-                                    featuredProducts.add(phone);
-
-                                    Map<String, String> laptop = new HashMap<>();
-                                    laptop.put("name", "Gaming Laptop");
-                                    laptop.put("price", "₹65,999");
-                                    laptop.put("image", "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center");
-                                    laptop.put("description", "High performance gaming laptop for pro gamers thank you for the gaming");
-                                    laptop.put("rating", "4.2");
-                                    laptop.put("id", "laptop1");
-                                    featuredProducts.add(laptop);
-                                                                                                        
-                                    Map<String, String> headphones = new HashMap<>();
-                                    headphones.put("name", "Wireless Headphones");
-                                    headphones.put("price", "₹8,999");
-                                    headphones.put("image", "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center");
-                                    headphones.put("description", "Noise-cancelling wireless headphones with premium sound");
-                                    headphones.put("rating", "4.8");
-                                    headphones.put("id", "headphones1");
-                                    featuredProducts.add(headphones);
-
-                                    Map<String, String> smartwatch = new HashMap<>();
-                                    smartwatch.put("name", "Smart Watch");
-                                    smartwatch.put("price", "₹12,999");
-                                    smartwatch.put("image", "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop&crop=center");
-                                    smartwatch.put("description", "Smart Watch with fitness tracking and health monitoring");
-                                    smartwatch.put("rating", "4.3");
-                                    smartwatch.put("id", "smartwatch1");
-                                    featuredProducts.add(smartwatch);
-
-                                    Map<String, String> tablet = new HashMap<>();
-                                    tablet.put("name", "Tablet Pro");
-                                    tablet.put("price", "₹18,999");
-                                    tablet.put("image", "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop&crop=center");
-                                    tablet.put("description", "Tablet Pro with high-res display and long battery life");
-                                    tablet.put("rating", "4.6");
-                                    tablet.put("id", "tablet1");
-                                    featuredProducts.add(tablet);
-
-                                    Map<String, String> camera = new HashMap<>();
-                                    camera.put("name", "DSLR Camera");
-                                    camera.put("price", "₹45,999");
-                                    camera.put("image", "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop&crop=center");
-                                    camera.put("description", "Professional DSLR Camera for photography lovers");
-                                    camera.put("rating", "4.4");
-                                    camera.put("id", "camera1");
-                                    featuredProducts.add(camera);
-
-                                    for(Map<String, String> product : featuredProducts) { 
-                                    %>
-                                        <div class="product-card">
-                                            <div class="product-image">
-                                                <img src="<%=product.get("image")%>" alt="<%=product.get("name")%>" loading="lazy">
-                                                <div class="product-overlay">
-                                                    <button class="btn btn-sm btn-quick-view" data-bs-toggle="modal"
-                                                        data-bs-target="#quickViewModal" data-title="<%=product.get("name")%>"
-                                                        data-img="<%=product.get("image")%>"
-                                                        data-price="<%=product.get("price")%>" data-rating="<%=product.get("rating")%>"
-                                                        data-desc="<%=product.get("description")%>">
-                                                        Quick View
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="product-info">
-                                                <h3><%=product.get("name")%></h3>
-                                                <p class="product-price"><%=product.get("price")%></p>
-                                                <div class="product-rating">
-                                                    <% 
-                                                    double rating = Double.parseDouble(product.get("rating"));
-                                                    for(int i = 1; i <= 5; i++) {
-                                                        if(i <= rating) {
-                                                    %>
-                                                        <i class="fas fa-star"></i>
-                                                    <% } else if(i - 0.5 <= rating) { %>
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                    <% } else { %>
-                                                        <i class="far fa-star"></i>
-                                                    <% } } %>
-                                                    <span>(<%=product.get("rating")%>)</span>
-                                                </div>
-                                                <form action="cart.jsp" method="post">
-                                                    <input type="hidden" name="productId" value="<%=product.get("id")%>" />
-                                                    <input type="hidden" name="productName" value="<%=product.get("name")%>" />
-                                                    <input type="hidden" name="productPrice" value="<%=product.get("price")%>" />
-                                                    <input type="hidden" name="productImage" value="<%=product.get("image")%>" />
-                                                    <button type="submit" class="btn btn-primary">Add to Cart</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    <% } %>
-                                </div>
-                            </div>
-                        </section>
-
-                        <footer class="footer" id="contact">
-                            <div class="container">
-                                <div class="footer-content">
-                                    <div class="footer-section">
-                                        <div class="footer-brand">
-                                            <i class="fas fa-shopping-bag"></i>
-                                            <span>ShopEasy</span>
-                                        </div>
-                                        <p>Your trusted online shopping destination for quality products at great
-                                            prices.
-                                        </p>
-                                        <div class="social-links">
-                                            <a href="#"><i class="fab fa-facebook"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="footer-section">
-                                        <h3>Quick Links</h3>
-                                        <ul>
-                                            <li><a href="index.jsp">Home</a></li>
-                                            <li><a href="#products">Products</a></li>
-                                            <li><a href="#categories">Categories</a></li>
-                                            <li><a href="#about">About Us</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="footer-section">
-                                        <h3>Customer Service</h3>
-                                        <ul>
-                                            <li><a href="#">Help Center</a></li>
-                                            <li><a href="#">Shipping Info</a></li>
-                                            <li><a href="#">Returns</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="footer-section">
-                                        <h3>Contact Info</h3>
-                                        <div class="contact-info">
-                                            <p><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, Mumbai, India
-                                            </p>
-                                            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                                            <p><i class="fas fa-envelope"></i> info@shopeasy.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="footer-bottom">
-                                    <p>&copy; 2024 ShopEasy. All rights reserved.</p>
-                                </div>
-                            </div>
-                        </footer>
-
-                        <script>
-
-                            let currentSlideIndex = 0;
-                            const slides = document.querySelectorAll('.slide');
-                            const dots = document.querySelectorAll('.dot');
-                            const totalSlides = slides.length;
-
-                            function showSlide(index) {
-                                slides.forEach(slide => slide.classList.remove('active'));
-                                dots.forEach(dot => dot.classList.remove('active'));
-
-                                slides[index].classList.add('active');
-                                dots[index].classList.add('active');
-                            }
-
-                            function changeSlide(direction) {
-                                currentSlideIndex += direction;
-
-                                if (currentSlideIndex >= totalSlides) {
-                                    currentSlideIndex = 0;
-                                } else if (currentSlideIndex < 0) {
-                                    currentSlideIndex = totalSlides - 1;
-                                }
-
-                                showSlide(currentSlideIndex);
-                            }
-
-                            function currentSlide(index) {
-                                currentSlideIndex = index - 1;
-                                showSlide(currentSlideIndex);
-                            }
-
-                            setInterval(() => {
-                                changeSlide(1);
-                            }, 5000);
-
-                            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                                anchor.addEventListener('click', function (e) {
-                                    e.preventDefault();
-                                    const target = document.querySelector(this.getAttribute('href'));
-                                    if (target) {
-                                        target.scrollIntoView({
-                                            behavior: 'smooth',
-                                            block: 'start'
-                                        });
-                                    }
-                                });
-                            });
-
-                            document.querySelectorAll('.product-card .btn-primary').forEach(button => {
-                                button.addEventListener('click', function () {
-                                    const productName = this.closest('.product-card').querySelector('h3').textContent;
-                                    alert(`${productName} added to cart!`);
-                                });
-                            });
-
-                            document.querySelector('.search-btn').addEventListener('click', function () {
-                                const searchTerm = document.querySelector('.search-input').value;
-                                if (searchTerm.trim()) {
-                                    alert(`Searching for: ${searchTerm}`);
-                                }
-                            });
-
-                            document.querySelector('.search-input').addEventListener('keypress', function (e) {
-                                if (e.key === 'Enter') {
-                                    document.querySelector('.search-btn').click();
-                                }
-                            });
-
-                            // Offcanvas is handled by Bootstrap; no custom JS needed
-                        </script>
-
-                        <!-- Quick View Modal -->
-                        <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="quickViewModalLabel">Product Name</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row g-3">
-                                            <div class="col-12 col-lg-6">
-                                                <img id="quickViewImg" src="" class="w-100 rounded" alt="Product Image">
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <p id="quickViewDesc" class="mb-3">Product description here.</p>
-                                                <p class="mb-1"><strong>Price:</strong> <span
-                                                        id="quickViewPrice"></span>
-                                                </p>
-                                                <p class="mb-3"><strong>Rating:</strong> <span
-                                                        id="quickViewRating"></span>
-                                                </p>
-                                                <button type="button" class="btn btn-success ">Add to Cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h4>24/7 Support</h4>
+                        <p>Our dedicated customer support team is available round the clock to assist you with any queries.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo-alt"></i>
                         </div>
+                        <h4>Easy Returns</h4>
+                        <p>Not satisfied? No problem! Easy 30-day return policy with hassle-free refunds and exchanges.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>Best Prices</h4>
+                        <p>Competitive pricing with regular discounts and special offers. Save more with our loyalty rewards program.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Quality Products</h4>
+                        <p>Curated selection of high-quality products from trusted brands and verified sellers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <div class="stat-label">Products</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <div class="stat-label">Brands</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title text-white">Stay Updated</h2>
+                    <p class="section-subtitle text-white opacity-75">Subscribe to our newsletter and never miss out on exclusive deals and new arrivals</p>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane me-2"></i>Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('.newsletter-input').value;
+            if (email) {
+                alert('Thank you for subscribing! You\'ll receive updates at ' + email);
+                this.querySelector('.newsletter-input').value = '';
+            }
+        });
+    </script>
 
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-                        <script>
-                            document.querySelectorAll('.btn-quick-view').forEach(function (btn) {
-                                btn.addEventListener('click', function () {
-                                    document.getElementById('quickViewModalLabel').textContent = this.getAttribute('data-title') || '';
-                                    document.getElementById('quickViewImg').src = this.getAttribute('data-img') || '';
-                                    document.getElementById('quickViewDesc').textContent = this.getAttribute('data-desc') || '';
-                                    document.getElementById('quickViewPrice').textContent = this.getAttribute('data-price') || '';
-                                    document.getElementById('quickViewRating').textContent = this.getAttribute('data-rating') || '';
-                                });
-                            });
-
-                            // Keep offcanvas hidden by default and hide on large screens
-                            document.addEventListener('DOMContentLoaded', function () {
-                                var offcanvasEl = document.getElementById('navOffcanvas');
-                                if (offcanvasEl && offcanvasEl.classList.contains('show')) {
-                                    var off = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
-                                    off.hide();
-                                }
-                            });
-                            window.addEventListener('resize', function () {
-                                var offcanvasEl = document.getElementById('navOffcanvas');
-                                if (window.innerWidth >= 992 && offcanvasEl) {
-                                    var off = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
-                                    off.hide();
-                                }
-                            });
-
-                            // Offcanvas search: reuse same alert flow as top search
-                            var offBtn = document.getElementById('offcanvasSearchBtn');
-                            var offInput = document.getElementById('offcanvasSearchInput');
-                            if (offBtn && offInput) {
-                                offBtn.addEventListener('click', function () {
-                                    var term = offInput.value || '';
-                                    if (term.trim()) {
-                                        alert(`Searching for: ${term}`);
-                                    }
-                                });
-                                offInput.addEventListener('keypress', function (e) {
-                                    if (e.key === 'Enter') {
-                                        offBtn.click();
-                                    }
-                                });
-                            }
-                        </script>
     </body>
 
     </html>

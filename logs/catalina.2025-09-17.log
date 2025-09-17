@@ -1,0 +1,728 @@
+17-Sep-2025 09:34:39.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 09:34:39.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 09:34:39.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 09:34:39.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 09:34:39.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 09:34:39.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 09:34:39.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 09:34:39.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 09:34:39.055 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 09:34:39.276 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 09:34:39.296 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [405] milliseconds
+17-Sep-2025 09:34:39.333 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 09:34:39.334 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 09:34:39.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 09:34:39.604 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [259] ms
+17-Sep-2025 09:34:39.605 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 09:34:40.019 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [414] ms
+17-Sep-2025 09:34:40.020 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 09:34:40.345 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 09:34:40.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [359] ms
+17-Sep-2025 09:34:40.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 09:34:40.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [34] ms
+17-Sep-2025 09:34:40.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 09:34:40.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [27] ms
+17-Sep-2025 09:34:40.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 09:34:40.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [28] ms
+17-Sep-2025 09:34:40.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 09:34:40.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [21] ms
+17-Sep-2025 09:34:40.495 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 09:34:40.517 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1219] milliseconds
+17-Sep-2025 10:11:02.498 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:11:02.503 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 10:11:02.521 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:11:02.534 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:11:42.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 10:11:42.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:11:42.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:11:42.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 10:11:42.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:11:42.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 10:11:42.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 10:11:43.023 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:11:43.044 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [410] milliseconds
+17-Sep-2025 10:11:43.082 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 10:11:43.083 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 10:11:43.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 10:11:43.357 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [265] ms
+17-Sep-2025 10:11:43.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 10:11:43.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [414] ms
+17-Sep-2025 10:11:43.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 10:11:44.098 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 10:11:44.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [359] ms
+17-Sep-2025 10:11:44.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 10:11:44.163 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [32] ms
+17-Sep-2025 10:11:44.163 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 10:11:44.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [28] ms
+17-Sep-2025 10:11:44.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 10:11:44.229 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [38] ms
+17-Sep-2025 10:11:44.229 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 10:11:44.249 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [20] ms
+17-Sep-2025 10:11:44.253 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:11:44.282 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1237] milliseconds
+17-Sep-2025 10:13:01.266 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Sep-2025 10:13:01.267 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:13:01.272 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 10:13:01.293 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:13:01.308 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:29:16.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 10:29:16.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 10:29:16.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 10:29:16.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 10:29:16.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 10:29:16.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 10:29:16.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 10:29:16.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 10:29:16.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 10:29:16.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:29:16.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:29:16.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 10:29:16.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 10:29:16.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 10:29:16.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 10:29:16.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 10:29:16.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 10:29:16.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 10:29:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 10:29:16.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 10:29:16.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 10:29:16.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 10:29:16.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:29:16.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:29:16.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 10:29:16.267 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 10:29:16.754 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:29:16.789 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [888] milliseconds
+17-Sep-2025 10:29:16.885 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 10:29:16.886 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 10:29:16.906 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 10:29:17.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [587] ms
+17-Sep-2025 10:29:17.495 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 10:29:18.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [959] ms
+17-Sep-2025 10:29:18.455 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 10:29:19.178 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 10:29:19.257 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [802] ms
+17-Sep-2025 10:29:19.258 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 10:29:19.332 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [74] ms
+17-Sep-2025 10:29:19.333 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 10:29:19.412 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [79] ms
+17-Sep-2025 10:29:19.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 10:29:19.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [83] ms
+17-Sep-2025 10:29:19.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 10:29:19.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [44] ms
+17-Sep-2025 10:29:19.550 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:29:19.594 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2801] milliseconds
+17-Sep-2025 10:36:04.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 10:36:04.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 10:36:04.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 10:36:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 10:36:04.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 10:36:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 10:36:04.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 10:36:04.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 10:36:04.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 10:36:04.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:36:04.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:36:04.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 10:36:04.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 10:36:04.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 10:36:04.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 10:36:04.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 10:36:04.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 10:36:04.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 10:36:04.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 10:36:04.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 10:36:04.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 10:36:04.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 10:36:04.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:36:04.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:36:04.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 10:36:04.683 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 10:36:05.178 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:36:05.216 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [909] milliseconds
+17-Sep-2025 10:36:05.299 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 10:36:05.300 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 10:36:05.319 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 10:36:05.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [577] ms
+17-Sep-2025 10:36:05.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 10:36:06.797 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [901] ms
+17-Sep-2025 10:36:06.798 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 10:36:07.541 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 10:36:07.617 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [818] ms
+17-Sep-2025 10:36:07.617 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 10:36:07.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [69] ms
+17-Sep-2025 10:36:07.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 10:36:07.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [61] ms
+17-Sep-2025 10:36:07.749 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 10:36:07.843 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [95] ms
+17-Sep-2025 10:36:07.843 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 10:36:07.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [42] ms
+17-Sep-2025 10:36:07.892 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:36:07.938 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2718] milliseconds
+17-Sep-2025 10:47:34.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 10:47:34.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 10:47:34.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 10:47:34.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 10:47:34.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 10:47:34.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 10:47:34.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 10:47:34.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 10:47:34.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 10:47:34.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:47:34.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:47:34.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 10:47:34.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 10:47:34.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 10:47:34.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 10:47:34.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 10:47:34.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 10:47:34.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 10:47:34.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 10:47:34.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 10:47:34.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 10:47:34.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 10:47:34.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:47:34.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:47:34.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 10:47:34.093 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 10:47:34.591 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:47:34.616 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:522)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:735)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:266)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1399)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1412)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 11 more
+17-Sep-2025 10:47:34.629 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [904] milliseconds
+17-Sep-2025 10:47:34.708 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 10:47:34.708 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 10:47:34.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 10:47:35.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [580] ms
+17-Sep-2025 10:47:35.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 10:47:36.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [916] ms
+17-Sep-2025 10:47:36.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 10:47:37.022 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 10:47:37.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [874] ms
+17-Sep-2025 10:47:37.099 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 10:47:37.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [68] ms
+17-Sep-2025 10:47:37.168 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 10:47:37.234 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [67] ms
+17-Sep-2025 10:47:37.235 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 10:47:37.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [95] ms
+17-Sep-2025 10:47:37.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 10:47:37.384 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [53] ms
+17-Sep-2025 10:47:37.392 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2761] milliseconds
+17-Sep-2025 10:47:37.404 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:851)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:799)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+17-Sep-2025 10:47:37.405 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:47:37.406 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 10:47:37.449 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:47:37.451 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:57:54.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 10:57:54.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 10:57:54.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 10:57:54.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 10:57:54.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 10:57:54.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 10:57:54.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 10:57:54.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 10:57:54.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 10:57:54.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:57:54.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:57:54.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 10:57:54.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 10:57:54.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 10:57:54.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 10:57:54.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 10:57:54.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 10:57:54.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 10:57:54.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 10:57:54.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 10:57:54.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 10:57:54.890 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 10:57:54.890 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:57:54.890 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 10:57:54.891 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 10:57:54.904 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 10:57:55.419 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:57:55.449 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:522)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:735)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:266)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1399)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1412)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 11 more
+17-Sep-2025 10:57:55.450 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [923] milliseconds
+17-Sep-2025 10:57:55.539 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 10:57:55.540 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 10:57:55.557 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 10:57:56.147 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [589] ms
+17-Sep-2025 10:57:56.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 10:57:57.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [928] ms
+17-Sep-2025 10:57:57.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 10:57:57.966 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 10:57:58.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [973] ms
+17-Sep-2025 10:57:58.051 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 10:57:58.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [85] ms
+17-Sep-2025 10:57:58.137 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 10:57:58.206 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [70] ms
+17-Sep-2025 10:57:58.207 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 10:57:58.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [109] ms
+17-Sep-2025 10:57:58.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 10:57:58.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [56] ms
+17-Sep-2025 10:57:58.382 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2930] milliseconds
+17-Sep-2025 10:57:58.398 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:851)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:799)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+17-Sep-2025 10:57:58.399 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:57:58.400 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 10:57:58.443 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 10:57:58.446 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:32:56.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:32:56.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:32:56.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:32:56.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:32:56.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:32:56.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:32:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:32:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:32:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:32:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:32:56.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:32:56.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:32:56.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:32:56.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:32:56.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:32:56.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:32:56.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:32:56.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:32:56.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:32:56.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:32:56.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:32:56.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:32:56.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:32:56.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:32:56.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:32:56.853 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:32:57.370 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:32:57.409 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [929] milliseconds
+17-Sep-2025 11:32:57.489 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:32:57.490 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:32:57.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:32:58.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [559] ms
+17-Sep-2025 11:32:58.068 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:32:58.960 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [891] ms
+17-Sep-2025 11:32:58.960 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:32:59.704 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:32:59.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [819] ms
+17-Sep-2025 11:32:59.781 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:32:59.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [80] ms
+17-Sep-2025 11:32:59.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:32:59.924 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [63] ms
+17-Sep-2025 11:32:59.925 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:33:00.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [82] ms
+17-Sep-2025 11:33:00.009 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:33:00.057 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [48] ms
+17-Sep-2025 11:33:00.064 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:33:00.109 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2697] milliseconds
+17-Sep-2025 11:35:12.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:35:12.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:35:12.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:35:12.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:35:12.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:35:12.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:35:12.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:35:12.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:35:12.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:35:12.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:35:12.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:35:12.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:35:12.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:35:12.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:35:12.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:35:12.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:35:12.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:35:12.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:35:12.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:35:12.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:35:12.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:35:12.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:35:12.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:35:12.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:35:12.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:35:12.782 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:35:13.277 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:35:13.315 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [904] milliseconds
+17-Sep-2025 11:35:13.403 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:35:13.403 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:35:13.420 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:35:13.997 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [577] ms
+17-Sep-2025 11:35:13.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:35:14.857 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [858] ms
+17-Sep-2025 11:35:14.858 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:35:15.622 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:35:15.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [843] ms
+17-Sep-2025 11:35:15.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:35:15.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [88] ms
+17-Sep-2025 11:35:15.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:35:15.851 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [59] ms
+17-Sep-2025 11:35:15.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:35:15.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [77] ms
+17-Sep-2025 11:35:15.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:35:15.980 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [51] ms
+17-Sep-2025 11:35:15.987 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:35:16.031 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2713] milliseconds
+17-Sep-2025 11:37:11.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:37:11.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:37:11.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:37:11.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:37:11.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:37:11.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:37:11.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:37:11.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:37:11.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:37:11.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:37:11.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:37:11.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:37:11.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:37:11.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:37:11.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:37:11.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:37:11.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:37:11.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:37:11.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:37:11.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:37:11.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:37:11.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:37:11.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:37:11.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:37:11.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:37:11.478 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:37:11.985 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:37:12.027 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [915] milliseconds
+17-Sep-2025 11:37:12.120 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:37:12.120 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:37:12.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:37:12.700 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [560] ms
+17-Sep-2025 11:37:12.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:37:13.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [899] ms
+17-Sep-2025 11:37:13.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:37:14.336 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:37:14.416 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [814] ms
+17-Sep-2025 11:37:14.416 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:37:14.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [69] ms
+17-Sep-2025 11:37:14.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:37:14.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [65] ms
+17-Sep-2025 11:37:14.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:37:14.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [75] ms
+17-Sep-2025 11:37:14.628 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:37:14.669 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [41] ms
+17-Sep-2025 11:37:14.677 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:37:14.720 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2691] milliseconds
+17-Sep-2025 11:45:46.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:45:46.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:45:46.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:45:46.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:45:46.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:45:46.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:45:46.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:45:46.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:45:46.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:45:46.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:45:46.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:45:46.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:45:46.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:45:46.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:45:46.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:45:46.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:45:46.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:45:46.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:45:46.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:45:46.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:45:46.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:45:46.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:45:46.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:45:46.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:45:46.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:45:47.008 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:45:47.518 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:45:47.556 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [917] milliseconds
+17-Sep-2025 11:45:47.647 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:45:47.648 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:45:47.668 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:45:48.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [579] ms
+17-Sep-2025 11:45:48.249 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:45:49.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [931] ms
+17-Sep-2025 11:45:49.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:45:49.919 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:45:50.012 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [830] ms
+17-Sep-2025 11:45:50.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:45:50.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [68] ms
+17-Sep-2025 11:45:50.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:45:50.149 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [69] ms
+17-Sep-2025 11:45:50.150 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:45:50.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [77] ms
+17-Sep-2025 11:45:50.228 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:45:50.276 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [47] ms
+17-Sep-2025 11:45:50.283 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:45:50.327 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2768] milliseconds
+17-Sep-2025 11:46:20.321 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/my-app]
+17-Sep-2025 11:46:20.322 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my-app] has started
+17-Sep-2025 11:46:20.417 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my-app] is completed
+17-Sep-2025 11:50:57.645 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Sep-2025 11:50:57.646 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:50:57.657 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 11:50:57.681 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:50:57.691 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:51:14.305 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:51:14.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:51:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:51:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:51:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:51:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:51:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:51:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:51:14.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:51:14.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:51:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:51:14.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:51:14.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:51:14.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:51:14.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:51:14.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:51:14.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:51:14.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:51:14.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:51:14.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:51:14.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:51:14.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:51:14.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:51:14.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:51:14.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:51:14.361 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:51:14.862 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:51:14.903 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [924] milliseconds
+17-Sep-2025 11:51:14.988 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:51:14.988 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:51:15.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:51:15.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [565] ms
+17-Sep-2025 11:51:15.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:51:16.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [881] ms
+17-Sep-2025 11:51:16.455 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:51:17.193 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:51:17.275 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [820] ms
+17-Sep-2025 11:51:17.276 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:51:17.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [65] ms
+17-Sep-2025 11:51:17.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:51:17.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [61] ms
+17-Sep-2025 11:51:17.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:51:17.484 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [79] ms
+17-Sep-2025 11:51:17.484 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:51:17.530 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [46] ms
+17-Sep-2025 11:51:17.538 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:51:17.583 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2677] milliseconds
+17-Sep-2025 11:53:18.326 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Sep-2025 11:53:18.326 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:53:18.338 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 11:53:18.378 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:53:18.394 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:53:31.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:53:31.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:53:31.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:53:31.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:53:31.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:53:31.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:53:31.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:53:31.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:53:31.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:53:31.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:53:31.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:53:31.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:53:31.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:53:31.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:53:31.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:53:31.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:53:31.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:53:31.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:53:31.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:53:31.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:53:31.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:53:31.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:53:31.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:53:31.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:53:31.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:53:31.956 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:53:32.448 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:53:32.489 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [917] milliseconds
+17-Sep-2025 11:53:32.588 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:53:32.588 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:53:32.609 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:53:33.208 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [599] ms
+17-Sep-2025 11:53:33.209 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:53:34.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [920] ms
+17-Sep-2025 11:53:34.130 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:53:34.877 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:53:34.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [826] ms
+17-Sep-2025 11:53:34.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:53:35.027 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [69] ms
+17-Sep-2025 11:53:35.028 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:53:35.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [65] ms
+17-Sep-2025 11:53:35.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:53:35.173 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [79] ms
+17-Sep-2025 11:53:35.173 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:53:35.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [47] ms
+17-Sep-2025 11:53:35.229 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:53:35.274 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2782] milliseconds
+17-Sep-2025 11:55:20.507 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Sep-2025 11:55:20.508 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:55:20.525 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Sep-2025 11:55:20.561 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:55:20.572 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:55:33.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.44
+17-Sep-2025 11:55:33.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 4 2025 13:14:17 UTC
+17-Sep-2025 11:55:33.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.44.0
+17-Sep-2025 11:55:33.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Sep-2025 11:55:33.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Sep-2025 11:55:33.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Sep-2025 11:55:33.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+17-Sep-2025 11:55:33.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-LTS-58
+17-Sep-2025 11:55:33.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Sep-2025 11:55:33.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:55:33.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:55:33.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\VISHAL\Videos\ecomerce-java\conf\logging.properties
+17-Sep-2025 11:55:33.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Sep-2025 11:55:33.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Sep-2025 11:55:33.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Sep-2025 11:55:33.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Sep-2025 11:55:33.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Sep-2025 11:55:33.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Sep-2025 11:55:33.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Sep-2025 11:55:33.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Sep-2025 11:55:33.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Sep-2025 11:55:33.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Sep-2025 11:55:33.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:55:33.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\VISHAL\Videos\ecomerce-java
+17-Sep-2025 11:55:33.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\VISHAL\Videos\ecomerce-java\temp
+17-Sep-2025 11:55:33.297 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VISHAL\AppData\Local\Programs\Python\Python312\;C:\Users\VISHAL\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHAL\AppData\Local\Microsoft\WindowsApps;;C:\Users\VISHAL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHAL\AppData\Roaming\npm;C:\Users\VISHAL\AppData\Local\Programs\mongosh\;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\VISHAL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\VISHAL\AppData\Local\Programs\Qoder\bin;.]
+17-Sep-2025 11:55:33.786 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:55:33.826 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [953] milliseconds
+17-Sep-2025 11:55:33.907 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Sep-2025 11:55:33.907 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.44]
+17-Sep-2025 11:55:33.925 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs]
+17-Sep-2025 11:55:34.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\docs] has finished in [574] ms
+17-Sep-2025 11:55:34.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples]
+17-Sep-2025 11:55:35.434 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\examples] has finished in [934] ms
+17-Sep-2025 11:55:35.435 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo]
+17-Sep-2025 11:55:36.174 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2025 11:55:36.252 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\fmt-demo] has finished in [818] ms
+17-Sep-2025 11:55:36.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager]
+17-Sep-2025 11:55:36.328 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\host-manager] has finished in [74] ms
+17-Sep-2025 11:55:36.328 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager]
+17-Sep-2025 11:55:36.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\manager] has finished in [58] ms
+17-Sep-2025 11:55:36.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app]
+17-Sep-2025 11:55:36.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\my-app] has finished in [75] ms
+17-Sep-2025 11:55:36.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT]
+17-Sep-2025 11:55:36.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\VISHAL\Videos\ecomerce-java\webapps\ROOT] has finished in [47] ms
+17-Sep-2025 11:55:36.520 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Sep-2025 11:55:36.562 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2733] milliseconds

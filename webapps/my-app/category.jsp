@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%
 // Dynamic categories with images and descriptions
@@ -47,135 +46,224 @@ categories.put("Books", books);
 categories.put("Beauty", beauty);
 %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Categories - ShopEasy</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1.0">
-</head>
-<body>
-    <% String message=request.getParameter("message"); String username=(String) session.getAttribute("username"); Boolean isLoggedIn=(Boolean) session.getAttribute("isLoggedIn"); if (isLoggedIn==null) isLoggedIn=false; %>
-    <link rel="stylesheet" href="css/style.css?v=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <%@ include file="includes/head.jsp" %>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            text-align: center;
         }
-        .navbar {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-        .nav-brand {
-            font-size: 1.8rem;
+        
+        .page-title {
+            font-size: 3rem;
             font-weight: 700;
-            color: #667eea;
-            text-decoration: none;
+            margin-bottom: 20px;
         }
-        .nav-brand i {
-            font-size: 2rem;
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
         }
+        
+        .categories-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
         .category-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
+        
         .category-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
+        
         .category-image {
-            height: 200px;
+            height: 250px;
             background-size: cover;
             background-position: center;
             position: relative;
+            overflow: hidden;
         }
+        
         .category-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: all 0.3s ease;
         }
+        
         .category-card:hover .category-overlay {
             opacity: 1;
         }
+        
+        .category-content {
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
         .category-icon {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
         }
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
+        
+        .category-card:hover .category-icon {
+            transform: scale(1.1);
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
             font-weight: 700;
             color: #2d3748;
-            margin-bottom: 50px;
-            position: relative;
+            margin-bottom: 15px;
         }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
+        
+        .category-description {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            flex: 1;
+        }
+        
+        .category-btn {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 2px;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-top: auto;
         }
-
+        
+        .category-btn:hover {
+            background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .overlay-icon {
+            font-size: 3rem;
+            color: white;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Design */
         @media (max-width: 1200px) {
-            .container {
-                max-width: 100%;
-                padding: 0 15px;
+            .categories-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
         }
-
+        
         @media (max-width: 992px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 25px;
+            }
+            
+            .category-image {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 100px 0 60px;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .categories-section {
+                padding: 60px 0;
+            }
+            
             .categories-grid {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 gap: 20px;
             }
             
-            .section-title {
-                font-size: 2.2rem;
+            .category-content {
+                padding: 25px 20px;
+            }
+            
+            .category-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
             }
         }
-
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 40px;
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.75rem;
             }
             
             .categories-grid {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                gap: 15px;
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
             
-            .category-card {
-                padding: 30px 15px;
+            .category-image {
+                height: 180px;
+            }
+            
+            .category-content {
+                padding: 20px 15px;
             }
             
             .category-icon {
@@ -184,187 +272,69 @@ categories.put("Beauty", beauty);
                 font-size: 1.3rem;
             }
             
-            .category-image {
-                height: 150px;
+            .category-title {
+                font-size: 1.3rem;
             }
         }
-
-        @media (max-width: 576px) {
-            .container {
-                padding: 0 10px;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 30px;
-            }
-            
-            .categories-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .category-card {
-                padding: 25px 15px;
-            }
-            
-            .category-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
-            }
-            
-            .category-image {
-                height: 120px;
-            }
-            
-            .nav-brand {
-                font-size: 1.5rem;
-            }
-            
-            .nav-brand i {
-                font-size: 1.5rem;
-            }
-        }
-
+        
         @media (max-width: 480px) {
-            .section-title {
-                font-size: 1.4rem;
+            .page-header {
+                padding: 90px 0 50px;
             }
             
-            .category-card h5 {
-                font-size: 1.1rem;
+            .page-title {
+                font-size: 1.5rem;
             }
             
-            .category-card p {
-                font-size: 0.9rem;
-            }
-            
-            .btn {
-                padding: 8px 16px;
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .container {
-                padding: 0 5px;
-            }
-            
-            .category-card {
-                padding: 20px 10px;
-            }
-            
-            .category-icon {
-                width: 40px;
-                height: 40px;
+            .page-subtitle {
                 font-size: 1rem;
             }
             
             .category-image {
-                height: 100px;
+                height: 150px;
             }
-        } 
-            .custom-border{
-            border: none;
         }
     </style>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <i class="fas fa-shopping-bag"></i>
-                <span>ShopEasy</span>
-            </div>
-            <div class="nav-search d-none d-lg-flex">
-                <input type="text" placeholder="Search products..." class="search-input">
-                <button class="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="nav-links">
-                <a href="index.jsp" class="nav-link">Home</a>
-                <a href="category.jsp" class="nav-link active">Categories</a>
-                <a href="product.jsp?category=Electronics" class="nav-link">Products</a>
-                <a href="cart.jsp" class="nav-link">Cart</a>
-                <a href="about.jsp" class="nav-link">About</a>
-                <a href="contact.jsp" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-actions d-none d-lg-flex">
-                <a href="#" class="nav-icon" title="Wishlist"><i class="fas fa-heart"></i></a>
-                <a href="cart.jsp" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
-                <% if (isLoggedIn) { %>
-                    <div class="user-info">
-                        <span class="welcome-text">Welcome, <%= username %>!</span>
-                        <a href="logout.jsp" class="nav-icon" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
-                    </div>
-                <% } else { %>
-                    <a href="login.jsp" class="nav-icon" title="Login"><i class="fas fa-user"></i></a>
-                <% } %>
-            </div>
-            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Open menu" style="margin-left: 38px;">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="navOffcanvasLabel">ShopEasy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <div class="mb-3">
-                <div class="d-flex align-items-center p-2 rounded" style="background:#f8f9fa;">
-                    <input type="text" class="form-control form-control-sm me-2" placeholder="Search products..." id="offcanvasSearchInput">
-                    <button class="btn btn-primary btn-sm" id="offcanvasSearchBtn"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-            <nav class="nav flex-column mb-3">
-                <a href="index.jsp" class="nav-link">Home</a>
-                <a href="category.jsp" class="nav-link active" data-bs-dismiss="offcanvas">Categories</a>
-                <a href="product.jsp?category=Electronics" class="nav-link" data-bs-dismiss="offcanvas">Products</a>
-                <a href="cart.jsp" class="nav-link" data-bs-dismiss="offcanvas">Cart</a>
-                <a href="about.jsp" class="nav-link" data-bs-dismiss="offcanvas">About</a>
-                <a href="contact.jsp" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
-            </nav>
-            <div class="mt-auto d-flex align-items-center gap-3">
-                <a href="#" class="text-secondary"><i class="fas fa-heart"></i></a>
-                <a href="#" class="text-secondary"><i class="fas fa-shopping-cart"></i></a>
-                <% if (isLoggedIn) { %>
-                    <span class="text-primary fw-semibold">Welcome, <%= username %></span>
-                    <a href="logout.jsp" class="btn btn-outline-primary btn-sm" data-bs-dismiss="offcanvas">Logout</a>
-                <% } else { %>
-                    <a href="login.jsp" class="btn btn-outline-primary btn-sm" data-bs-dismiss="offcanvas">Login</a>
-                <% } %>
-            </div>
-        </div>
-    </div>
+</head>
+<body>
+    <%@ include file="includes/navbar.jsp" %>
     
-    <div class="container mt-5">
-        <h1 class="section-title">Shop by Category</h1>
-        <div class="row">
-            <% for(Map.Entry<String, Map<String, String>> entry : categories.entrySet()) { 
-                Map<String, String> category = entry.getValue();
-            %>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card category-card h-100" onclick="window.location.href='product.jsp?category=<%=entry.getKey()%>'">
-                        <div class="category-image" style="background-image: url('<%=category.get("image")%>')">
-                            <div class="category-overlay">
-                                <div class="text-center text-white">
-                                    <div class="category-icon mx-auto">
-                                        <i class="<%=category.get("icon")%>"></i>
-                                    </div>
-                                    <h4><%=category.get("name")%></h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><%=category.get("name")%></h5>
-                            <p class="card-text text-muted"><%=category.get("description")%></p>
-                            <a href="product.jsp?category=<%=entry.getKey()%>" class="btn btn-primary custom-border">View Products</a>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Shop by Categories</h1>
+            <p class="page-subtitle">Discover our wide range of products across different categories. Find exactly what you're looking for.</p>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-grid">
+                <% for(Map.Entry<String, Map<String, String>> entry : categories.entrySet()) {
+                    Map<String, String> category = entry.getValue();
+                %>
+                <div class="category-card" onclick="location.href='product.jsp?category=<%=entry.getKey()%>'">
+                    <div class="category-image" style="background-image: url('<%=category.get("image")%>')">
+                        <div class="category-overlay">
+                            <i class="<%=category.get("icon")%> overlay-icon"></i>
                         </div>
                     </div>
+                    <div class="category-content">
+                        <div class="category-icon">
+                            <i class="<%=category.get("icon")%>"></i>
+                        </div>
+                        <h3 class="category-title"><%=category.get("name")%></h3>
+                        <p class="category-description"><%=category.get("description")%></p>
+                        <a href="product.jsp?category=<%=entry.getKey()%>" class="category-btn">
+                            <i class="fas fa-arrow-right me-2"></i>View Products
+                        </a>
+                    </div>
                 </div>
-            <% } %>
+                <% } %>
+            </div>
         </div>
-    </div>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
