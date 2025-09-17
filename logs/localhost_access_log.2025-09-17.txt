@@ -346,3 +346,5 @@
 0:0:0:0:0:0:0:1 - - [17/Sep/2025:12:00:53 +0530] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 808
 0:0:0:0:0:0:0:1 - - [17/Sep/2025:12:00:56 +0530] "POST /my-app/cart.jsp HTTP/1.1" 200 22926
 0:0:0:0:0:0:0:1 - - [17/Sep/2025:12:00:56 +0530] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [17/Sep/2025:12:01:21 +0530] "GET /my-app/payment.jsp HTTP/1.1" 200 36867
+0:0:0:0:0:0:0:1 - - [17/Sep/2025:12:01:21 +0530] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 808
